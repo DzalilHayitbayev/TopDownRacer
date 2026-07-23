@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841a7691e707a54eb7f6e37586a39cf, type: 3}
+  m_Name: Pauwsche
+  m_EditorClassIdentifier: 
+  carUniqueID: 0
+  carColorSchemes:
+  - {fileID: -69344256, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+  - {fileID: -2075007466, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+  - {fileID: 1698211227, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+  - {fileID: -353637846, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+  carPrefab: {fileID: 5280159305847284180, guid: 2c33218c12330334b8fbf0d4af74b166, type: 3}

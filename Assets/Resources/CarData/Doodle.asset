@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4841a7691e707a54eb7f6e37586a39cf, type: 3}
+  m_Name: Doodle
+  m_EditorClassIdentifier: 
+  carUniqueID: 1
+  carColorSchemes:
+  - {fileID: 784867133, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+  - {fileID: -1099607606, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+  - {fileID: 405532646, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+  carPrefab: {fileID: 5439651592103516753, guid: af94898ac41e7844fa65635288a4b3f9, type: 3}
