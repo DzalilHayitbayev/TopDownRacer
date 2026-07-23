@@ -13,7 +13,7 @@ public class CarLapCounter : MonoBehaviour
     int numberOfPassedCheckPoints = 0;
 
     int lapsCompleated = 0;
-    const int lapsToComplete = 2;
+    const int lapsToComplete = 3;
 
     private bool isRaceCompleted = false;
 
@@ -25,6 +25,7 @@ public class CarLapCounter : MonoBehaviour
     LapCounterUIHandler lapCounterUIHandler;
 
     public event Action<CarLapCounter> OnPassCheckPoint;
+    public event Action<CarLapCounter> OnLapCompleted;
 
     private void Start()
     {
@@ -102,6 +103,7 @@ public class CarLapCounter : MonoBehaviour
                     if (!isRaceCompleted && lapCounterUIHandler != null)
                         lapCounterUIHandler.SetLapText($"LAP {lapsCompleated + 1}/{lapsToComplete}");
 
+                    OnLapCompleted?.Invoke(this);
                 }
 
                 OnPassCheckPoint?.Invoke(this);

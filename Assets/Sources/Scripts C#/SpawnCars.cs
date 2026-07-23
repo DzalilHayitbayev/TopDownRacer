@@ -6,6 +6,7 @@ using UnityEngine;
 public class SpawnCars : MonoBehaviour
 {
     [SerializeField] CinemachineCamera playerCinemachineCamera;
+    [SerializeField] ZombieSpawner zombieSpawner;
     int numberOfCarsSpawned = 0;
 
     void Start()
@@ -53,6 +54,7 @@ public class SpawnCars : MonoBehaviour
                         car.GetComponent<CarAIHandler>().enabled = false;
                         car.GetComponent<AStarLite>().enabled = false;
                         car.GetComponentInChildren<CarColorApplier>().ApplyColor(carData.CarColorSchemes[driverInfo.carColorIndex]);
+                        zombieSpawner.SetPlayerCarLapCounter(car.GetComponent<CarLapCounter>());
                         car.tag = "Player";
                         playerCinemachineCamera.Follow = car.transform;
 
