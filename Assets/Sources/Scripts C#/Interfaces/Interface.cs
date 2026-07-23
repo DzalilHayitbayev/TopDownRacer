@@ -1,7 +1,9 @@
+using UnityEngine;
+
 public interface IDamageable
 {
-    void TakeDamage(int damage);
     bool IsAlive { get; }
+    void TakeDamage(int damage, GameObject attacker = null);
 }
 
 public interface ISpeedAttacker

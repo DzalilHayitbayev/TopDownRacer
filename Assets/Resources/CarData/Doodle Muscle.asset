@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4841a7691e707a54eb7f6e37586a39cf, type: 3}
-  m_Name: Doodle
+  m_Name: Doodle Muscle
   m_EditorClassIdentifier: 
   carUniqueID: 1
+  price: 17
   carColorSchemes:
-  - {fileID: 784867133, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
-  - {fileID: -1099607606, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
-  - {fileID: 405532646, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+  - colorSprite: {fileID: 405532646, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+    price: 0
+  - colorSprite: {fileID: 784867133, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+    price: 10
+  - colorSprite: {fileID: -1099607606, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+    price: 10
   carPrefab: {fileID: 5439651592103516753, guid: af94898ac41e7844fa65635288a4b3f9, type: 3}

@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: Pauwsche
   m_EditorClassIdentifier: 
   carUniqueID: 0
+  price: 25
   carColorSchemes:
-  - {fileID: -69344256, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
-  - {fileID: -2075007466, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
-  - {fileID: 1698211227, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
-  - {fileID: -353637846, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+  - colorSprite: {fileID: -69344256, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+    price: 0
+  - colorSprite: {fileID: -2075007466, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+    price: 10
+  - colorSprite: {fileID: 1698211227, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+    price: 10
+  - colorSprite: {fileID: -353637846, guid: efefdbcd1e4cf614ab3515a2e295176a, type: 3}
+    price: 10
   carPrefab: {fileID: 5280159305847284180, guid: 2c33218c12330334b8fbf0d4af74b166, type: 3}

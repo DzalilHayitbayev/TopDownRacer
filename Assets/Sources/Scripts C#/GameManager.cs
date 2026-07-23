@@ -16,12 +16,27 @@ public class GameManager : MonoBehaviour
 
     List<DriverInfo> driverInfoList = new List<DriverInfo>();
 
+    [Header("Zombie Rewards System")]
+    [SerializeField] private int baseZombieReward = 10;
+
+    public PlayerWallet Wallet { get; private set; }
+    public PlayerGarage Garage { get; private set; }
+
+    public int PendingMoney { get; private set; }
+    public int CurrentLapMultiplier { get; private set; } = 1;
+
     public event Action<GameManager> OnGameStateChanged;
+    public event Action<int> OnPendingMoneyChanged;
+
 
     private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+            Wallet = new PlayerWallet();
+            Garage = new PlayerGarage();
+        }
         else if (Instance != this)
         {
             Destroy(gameObject);
@@ -30,20 +45,20 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
+
     private void Start()
     {
-        driverInfoList.Add(new DriverInfo(1, "P1", 0, UnityEngine.Random.Range(0, 1),false));
+        driverInfoList.Add(new DriverInfo(1, "P1", 0, UnityEngine.Random.Range(0, 1), false));
     }
-
 
     void LevelStart()
     {
         gameState = GameStates.countDown;
 
+        ResetRaceMoney();
+
         Debug.Log("Level started");
     }
-
-
 
     public GameStates GetGameState()
     {
@@ -82,13 +97,13 @@ public class GameManager : MonoBehaviour
     public void SetDriversLastRacePosition(int playerNumber, int position)
     {
         DriverInfo driverInfo = FindDriverInfo(playerNumber);
-        driverInfo.lastRacePosition = position;
+        if (driverInfo != null) driverInfo.lastRacePosition = position;
     }
 
     public void AddPointsToChampionship(int playerNumber, int points)
     {
         DriverInfo driverInfo = FindDriverInfo(playerNumber);
-        driverInfo.championshipPoints += points;
+        if (driverInfo != null) driverInfo.championshipPoints += points;
     }
 
     DriverInfo FindDriverInfo(int playerNumber)
@@ -123,16 +138,53 @@ public class GameManager : MonoBehaviour
 
         raceCompletedTime = Time.time;
 
+        if (PendingMoney > 0 && Wallet != null)
+        {
+            Wallet.SaveEarnedMoney(PendingMoney);
+        }
+
         ChangeGameState(GameStates.raceOver);
     }
+
     public void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         LevelStart();
     }
+
+    #region Zombie Reward System Logic
+
+    public void SetCurrentLapMultiplier(int lap)
+    {
+        CurrentLapMultiplier = Mathf.Max(1, lap);
+    }
+
+    public void AddZombieKillReward()
+    {
+        if (gameState != GameStates.running) return;
+
+        int reward = baseZombieReward * CurrentLapMultiplier;
+        PendingMoney += reward;
+
+        OnPendingMoneyChanged?.Invoke(PendingMoney);
+        Debug.Log($"[GameManager] Зомби уничтожен! +{reward}$ (Множитель круга x{CurrentLapMultiplier}). Временный счет: {PendingMoney}$");
+    }
+
+    private void ResetRaceMoney()
+    {
+        PendingMoney = 0;
+        CurrentLapMultiplier = 1;
+        OnPendingMoneyChanged?.Invoke(PendingMoney);
+    }
+
+    #endregion
 }

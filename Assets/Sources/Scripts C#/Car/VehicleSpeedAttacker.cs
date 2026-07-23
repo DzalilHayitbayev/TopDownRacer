@@ -40,7 +40,7 @@ public class VehicleSpeedAttacker : MonoBehaviour, ISpeedAttacker
                 calculatedDamage = Mathf.RoundToInt(baseRamDamage * (CurrentSpeed / speedThreshold));
             }
 
-            damageable.TakeDamage(calculatedDamage);
+            damageable.TakeDamage(calculatedDamage, gameObject);
 
            /* if (vehicleAnimator != null)
             {

@@ -53,8 +53,7 @@ public class SpawnCars : MonoBehaviour
                     {
                         car.GetComponent<CarAIHandler>().enabled = false;
                         car.GetComponent<AStarLite>().enabled = false;
-                        car.GetComponentInChildren<CarColorApplier>().ApplyColor(carData.CarColorSchemes[driverInfo.carColorIndex]);
-                        zombieSpawner.SetPlayerCarLapCounter(car.GetComponent<CarLapCounter>());
+                        car.GetComponentInChildren<CarColorApplier>().ApplyColor(carData.CarColorSchemes[driverInfo.carColorIndex].ColorSprite); zombieSpawner.SetPlayerCarLapCounter(car.GetComponent<CarLapCounter>());
                         car.tag = "Player";
                         playerCinemachineCamera.Follow = car.transform;
 

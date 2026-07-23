@@ -3,35 +3,40 @@ using UnityEngine;
 
 public class Health : MonoBehaviour, IDamageable
 {
+    public bool IsAlive => currentHealth > 0;
+    public GameObject LastAttacker { get; private set; }
+
     [SerializeField] private int maxHealth = 100;
+    private int currentHealth;
 
-    public int CurrentHealth { get; private set; }
-    public bool IsAlive => CurrentHealth > 0;
-
-    public event Action OnDamaged;
     public event Action OnDied;
+    public event Action OnDamaged;
 
     private void Awake()
     {
-        CurrentHealth = maxHealth;
+        currentHealth = maxHealth;
     }
 
-    // Метод для спавнера (сброс здоровья при повторном использовании из пула)
     public void ResetHealth()
     {
-        CurrentHealth = maxHealth;
+        currentHealth = maxHealth;
+        LastAttacker = null;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, GameObject attacker = null)
     {
-        if (!IsAlive || damage <= 0) return;
+        if (!IsAlive) return;
 
-        CurrentHealth -= damage;
+        if (attacker != null)
+        {
+            LastAttacker = attacker;
+        }
+
+        currentHealth -= damage;
         OnDamaged?.Invoke();
 
-        if (CurrentHealth <= 0)
+        if (currentHealth <= 0)
         {
-            CurrentHealth = 0;
             OnDied?.Invoke();
         }
     }
