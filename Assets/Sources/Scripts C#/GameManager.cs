@@ -146,6 +146,7 @@ public class GameManager : MonoBehaviour
         }
 
         ChangeGameState(GameStates.raceOver);
+        PowerUpDeck.ConsumeSelectedPowerUps();
     }
 
     public void OnEnable()

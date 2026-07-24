@@ -77,25 +77,10 @@ public class PowerUpSelectionPanel : MonoBehaviour
 
     private void OnSlotClicked(PowerUpSlotUI slot)
     {
-        if (_deck == null || slot.Data == null) return;
+        if (_deck == null || slot.Data == null || _wallet == null) return;
 
-        PowerUpType type = slot.Data.type;
-
-        if (!_deck.IsPowerUpPurchased(type))
-        {
-            bool purchased = _deck.TryPurchasePowerUp(slot.Data, _wallet);
-            if (!purchased)
-            {
-                Debug.LogWarning("[UI] Недостаточно денег для покупки!");
-            }
-            return;
-        }
-
-        bool success = _deck.ToggleSelectPowerUp(type);
-        if (!success)
-        {
-            Debug.LogWarning("[UI] Нельзя выбрать больше 3 PowerUp'ов!");
-        }
+        // Переключаем покупку/отмену закупки на одну гонку
+        _deck.TogglePurchasePowerUp(slot.Data, _wallet);
     }
 
     public void RefreshUI()
@@ -106,10 +91,10 @@ public class PowerUpSelectionPanel : MonoBehaviour
         {
             if (slot.Data == null) continue;
 
-            bool isPurchased = _deck.IsPowerUpPurchased(slot.Data.type);
+            // В одноразовой системе "куплен на гонку" и "выбран" — это одно состояние
             bool isSelected = _deck.IsPowerUpSelected(slot.Data.type);
 
-            slot.UpdateState(isPurchased, isSelected);
+            slot.UpdateState(isSelected, isSelected);
         }
     }
 

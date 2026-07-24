@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PowerUpData
   type: 5
   powerUpName: Mine
-  title: It Boosts
+  title: It is like a Shit
   icon: {fileID: 582693087578622951, guid: 48632585c80423549b302c48744de2f4, type: 3}
-  price: 100
+  price: 1
   duration: 5
   ammo: 3
   value: 50

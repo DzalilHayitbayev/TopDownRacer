@@ -17,21 +17,49 @@ public class PowerUpBox : MonoBehaviour
 
     private void LoadMatchPowerUps()
     {
-        // Загружаем только те 3 PowerUpData, которые игрок выбрал в меню
-        PowerUpData[] allPowerUps = Resources.LoadAll<PowerUpData>("PowerUps/");
-        List<PowerUpType> selectedTypes = GameManager.Instance.PowerUpDeck.GetSelectedPowerUps();
+        activeMatchPowerUps.Clear();
 
-        foreach (var p in allPowerUps)
+        // Загружаем только те PowerUpData, которые игрок купил/выбрал в меню
+        PowerUpData[] allPowerUps = Resources.LoadAll<PowerUpData>("PowerUps/");
+        
+        List<PowerUpType> selectedTypes = null;
+        if (GameManager.Instance != null && GameManager.Instance.PowerUpDeck != null)
         {
-            if (selectedTypes.Contains(p.type))
+            selectedTypes = GameManager.Instance.PowerUpDeck.GetSelectedPowerUps();
+        }
+
+        if (selectedTypes != null && selectedTypes.Count > 0)
+        {
+            foreach (var p in allPowerUps)
             {
-                activeMatchPowerUps.Add(p);
+                if (selectedTypes.Contains(p.type))
+                {
+                    activeMatchPowerUps.Add(p);
+                }
+            }
+        }
+
+        // --- Главное условие ---
+        // Если игрок ничего не взял на заезд, выключаем коробку
+        if (activeMatchPowerUps.Count == 0)
+        {
+            isAvailable = false;
+            
+            if (visualModel != null)
+                visualModel.SetActive(false);
+
+            // Если на самом объекте есть коллайдер, отключаем его,
+            // чтобы машина не врезалась / не триггерила пустой заезд
+            if (TryGetComponent<Collider2D>(out var col))
+            {
+                col.enabled = false;
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Дополнительная защита: если ничего не выбрано или коробка неактивна — игнорируем
         if (!isAvailable || activeMatchPowerUps.Count == 0) return;
 
         if (other.TryGetComponent<CarPowerUpInventory>(out var inventory))
@@ -52,7 +80,11 @@ public class PowerUpBox : MonoBehaviour
 
         yield return new WaitForSeconds(respawnTime);
 
-        isAvailable = true;
-        if (visualModel != null) visualModel.SetActive(true);
+        // Включаем обратно только если в заезде ВПРИНЦИПЕ есть доступные PowerUp'ы
+        if (activeMatchPowerUps.Count > 0)
+        {
+            isAvailable = true;
+            if (visualModel != null) visualModel.SetActive(true);
+        }
     }
 }
