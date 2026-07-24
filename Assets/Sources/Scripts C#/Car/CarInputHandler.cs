@@ -1,22 +1,38 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CarInputHandler : MonoBehaviour
 {
     public int playerNumber = 1;
     public bool isUIInput = false;
 
-    Vector2 inputVector = Vector2.zero;
+    private Vector2 inputVector = Vector2.zero;
 
-    TopDownCarController topDownCarController;
-
+    private TopDownCarController topDownCarController;
+    private CarPowerUpInventory powerUpInventory;
     private PlayerInputActions playerInputActions;
 
     private void Awake()
     {
         topDownCarController = GetComponent<TopDownCarController>();
+        powerUpInventory = GetComponent<CarPowerUpInventory>();
 
         playerInputActions = new PlayerInputActions();
+    }
+
+    private void OnEnable()
+    {
         playerInputActions.Player.Enable();
+
+        // Подписываемся на нажатие кнопки активации PowerUp
+        playerInputActions.Player.UsePowerUp.performed += OnUsePowerUpPerformed;
+    }
+
+    private void OnDisable()
+    {
+        // Отписываемся, чтобы избежать утечек памяти
+        playerInputActions.Player.UsePowerUp.performed -= OnUsePowerUpPerformed;
+        playerInputActions.Player.Disable();
     }
 
     private void Update()
@@ -26,10 +42,9 @@ public class CarInputHandler : MonoBehaviour
 
     public Vector2 GetMovementVectorNormalized()
     {
-
         if (isUIInput)
         {
-
+            // Управление через UI кнопки/джойстик (если применяется)
         }
         else
         {
@@ -48,17 +63,11 @@ public class CarInputHandler : MonoBehaviour
                     inputVector = playerInputActions.Player.Move4.ReadValue<Vector2>();
                     break;
             }
-            
-
-
-
-
         }
+
         topDownCarController.SetInputVector(inputVector);
 
-        inputVector = inputVector.normalized;
-
-        return inputVector;
+        return inputVector.normalized;
     }
 
     public void SetInput(Vector2 newInput)
@@ -66,8 +75,20 @@ public class CarInputHandler : MonoBehaviour
         inputVector = newInput;
     }
 
-    private void OnDestroy()
+    private void OnUsePowerUpPerformed(InputAction.CallbackContext context)
     {
-        playerInputActions.Player.Disable();
+        if (isUIInput) return;
+
+        if (powerUpInventory != null)
+        {
+            powerUpInventory.ActivatePowerUp();
+        }
+    }
+    public void OnPowerUpUIButtonClick()
+    {
+        if (powerUpInventory != null)
+        {
+            powerUpInventory.ActivatePowerUp();
+        }
     }
 }

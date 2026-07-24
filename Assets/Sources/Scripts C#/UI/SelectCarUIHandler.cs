@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SelectCarUIHandler : MonoBehaviour
@@ -17,7 +16,11 @@ public class SelectCarUIHandler : MonoBehaviour
     [Header("UI Controls")]
     [SerializeField] private Button actionButton;
     [SerializeField] private TMP_Text actionButtonText;
-    [SerializeField] private TMP_Text statusInfoText; // Текст состояния (например: "Car: 500$" или "Color: 100$")
+    [SerializeField] private TMP_Text statusInfoText;
+
+    [Header("Canvases Flow")]
+    [SerializeField] private GameObject selectCarCanvas;
+    [SerializeField] private SelectLevelUIHandler selectLevelUIHandler;
 
     private bool isChangingCar = false;
     private CarUIHandler carUIHandler = null;
@@ -34,6 +37,8 @@ public class SelectCarUIHandler : MonoBehaviour
 
     private void Update()
     {
+        if (!selectCarCanvas.activeSelf) return; // Игнорируем ввод, если экран скрыт
+
         if (Input.GetKeyDown(KeyCode.LeftArrow)) OnPreviousCar();
         else if (Input.GetKeyDown(KeyCode.RightArrow)) OnNextCar();
 
@@ -87,9 +92,6 @@ public class SelectCarUIHandler : MonoBehaviour
         UpdateUIState();
     }
 
-    /// <summary>
-    /// Нажатие на главную кнопку (RACE / BUY CAR / BUY COLOR)
-    /// </summary>
     public void OnMainActionButtonPressed()
     {
         if (isChangingCar) return;
@@ -101,36 +103,26 @@ public class SelectCarUIHandler : MonoBehaviour
         bool isCarUnlocked = garage.IsCarUnlocked(currentCar.CarUniqueID);
         bool isColorUnlocked = garage.IsColorUnlocked(currentCar.CarUniqueID, selectedCarColorIndex);
 
-        // 1. Если не куплена сама машина — покупаем машину
         if (!isCarUnlocked)
         {
             if (garage.TryPurchaseCar(currentCar, wallet))
             {
                 UpdateUIState();
             }
-            else
-            {
-                Debug.Log("Недостаточно денег для покупки машины!");
-            }
             return;
         }
 
-        // 2. Если машина куплена, но выбранный цвет не куплен — покупаем цвет
         if (!isColorUnlocked)
         {
             if (garage.TryPurchaseColor(currentCar, selectedCarColorIndex, wallet))
             {
                 UpdateUIState();
             }
-            else
-            {
-                Debug.Log("Недостаточно денег для покупки цвета!");
-            }
             return;
         }
 
-        // 3. Если и машина, и цвет куплены — запускаем гонку!
-        StartRaceWithSelectedCar();
+        // Переходим к выбору уровня
+        ConfirmCarAndProceed();
     }
 
     private void UpdateUIState()
@@ -143,26 +135,23 @@ public class SelectCarUIHandler : MonoBehaviour
 
         if (!isCarUnlocked)
         {
-            // Машина заблокирована
             if (actionButtonText != null) actionButtonText.text = $"BUY CAR ({currentCar.Price}$)";
             if (statusInfoText != null) statusInfoText.text = "Car Locked";
         }
         else if (!isColorUnlocked)
         {
-            // Машина есть, но выбранный цвет заблокирован
             int colorPrice = currentCar.CarColorSchemes[selectedCarColorIndex].Price;
             if (actionButtonText != null) actionButtonText.text = $"BUY COLOR ({colorPrice}$)";
             if (statusInfoText != null) statusInfoText.text = "Color Locked";
         }
         else
         {
-            // Всё куплено
-            if (actionButtonText != null) actionButtonText.text = "RACE";
+            if (actionButtonText != null) actionButtonText.text = "NEXT";
             if (statusInfoText != null) statusInfoText.text = "Ready!";
         }
     }
 
-    private void StartRaceWithSelectedCar()
+    private void ConfirmCarAndProceed()
     {
         GameManager.Instance.ClearDriversList();
         GameManager.Instance.AddDriverToList(1, "P1", carDatas[selectedCarIndex].CarUniqueID, selectedCarColorIndex, false);
@@ -181,11 +170,17 @@ public class SelectCarUIHandler : MonoBehaviour
             uniqueNames.Remove(driverName);
 
             CarData carData = uniqueCars[Random.Range(0, uniqueCars.Count)];
-
             GameManager.Instance.AddDriverToList(i, driverName, carData.CarUniqueID, selectedCarColorIndex, true);
         }
 
-        SceneManager.LoadScene(1);
+        // Скрываем экран машины и открываем выбор уровня
+        if (selectCarCanvas != null) selectCarCanvas.SetActive(false);
+        selectLevelUIHandler.ShowLevelSelectionUI();
+    }
+
+    public void ShowCarSelectionUI()
+    {
+        if (selectCarCanvas != null) selectCarCanvas.SetActive(true);
     }
 
     private IEnumerator SpawnCarCO(bool isCarAppearingOnRightSide)

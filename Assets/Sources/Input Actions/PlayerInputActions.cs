@@ -127,6 +127,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""UsePowerUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""c2dd06bf-d679-47f7-a32f-d282cc4b65ed"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -349,6 +358,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Move4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba41dabd-157a-416a-950d-d6a3f8459481"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UsePowerUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -361,6 +381,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_Move2 = m_Player.FindAction("Move2", throwIfNotFound: true);
         m_Player_Move3 = m_Player.FindAction("Move3", throwIfNotFound: true);
         m_Player_Move4 = m_Player.FindAction("Move4", throwIfNotFound: true);
+        m_Player_UsePowerUp = m_Player.FindAction("UsePowerUp", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -445,6 +466,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Move2;
     private readonly InputAction m_Player_Move3;
     private readonly InputAction m_Player_Move4;
+    private readonly InputAction m_Player_UsePowerUp;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -472,6 +494,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Move4".
         /// </summary>
         public InputAction @Move4 => m_Wrapper.m_Player_Move4;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/UsePowerUp".
+        /// </summary>
+        public InputAction @UsePowerUp => m_Wrapper.m_Player_UsePowerUp;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -510,6 +536,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Move4.started += instance.OnMove4;
             @Move4.performed += instance.OnMove4;
             @Move4.canceled += instance.OnMove4;
+            @UsePowerUp.started += instance.OnUsePowerUp;
+            @UsePowerUp.performed += instance.OnUsePowerUp;
+            @UsePowerUp.canceled += instance.OnUsePowerUp;
         }
 
         /// <summary>
@@ -533,6 +562,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Move4.started -= instance.OnMove4;
             @Move4.performed -= instance.OnMove4;
             @Move4.canceled -= instance.OnMove4;
+            @UsePowerUp.started -= instance.OnUsePowerUp;
+            @UsePowerUp.performed -= instance.OnUsePowerUp;
+            @UsePowerUp.canceled -= instance.OnUsePowerUp;
         }
 
         /// <summary>
@@ -601,5 +633,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMove4(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UsePowerUp" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUsePowerUp(InputAction.CallbackContext context);
     }
 }

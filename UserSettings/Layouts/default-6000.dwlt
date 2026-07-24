@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 43
+    y: 0
     width: 1920
     height: 36
   m_SerializedDataModeController:
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79
+    y: 24
     width: 1352
     height: 571
   m_SerializedDataModeController:
@@ -1385,9 +1385,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -46.44168, y: -17.715899, z: 0.0026999987}
+    m_Target: {x: 381.0425, y: 326.1886, z: -0.0526513}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: -46.44168, y: -17.715899, z: 0.0026999987}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1438,9 +1438,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 0.7898368
+    m_Target: 300.64258
     speed: 2
-    m_Value: 1.7568198
+    m_Value: 0.7898368
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1587,7 +1587,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 676
+    y: 24
     width: 374
     height: 358
   m_SerializedDataModeController:
@@ -1675,8 +1675,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 375
-    y: 676
+    x: 376
+    y: 24
     width: 976
     height: 358
   m_SerializedDataModeController:
@@ -1724,37 +1724,39 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 47046
-    - m_Data: 47052
-    - m_Data: 47054
-    - m_Data: 47056
-    - m_Data: 47060
-    - m_Data: 47062
-    - m_Data: 47064
-    - m_Data: 47068
-    - m_Data: 47072
-    - m_Data: 47074
-    - m_Data: 47076
-    - m_Data: 47078
-    - m_Data: 47080
-    - m_Data: 47082
-    - m_Data: 47084
-    - m_Data: 47086
-    - m_Data: 47088
-    - m_Data: 47090
-    - m_Data: 47092
-    - m_Data: 47094
-    - m_Data: 47096
-    - m_Data: 47098
-    - m_Data: 47100
-    - m_Data: 47102
-    - m_Data: 47744
-    - m_Data: 47752
-    - m_Data: 47798
-    - m_Data: 47812
-    - m_Data: 100686
-    - m_Data: 148424
-    - m_Data: 148484
+    - m_Data: 44142
+    - m_Data: 46234
+    - m_Data: 46236
+    - m_Data: 46238
+    - m_Data: 46240
+    - m_Data: 46242
+    - m_Data: 46244
+    - m_Data: 46246
+    - m_Data: 46248
+    - m_Data: 46250
+    - m_Data: 46252
+    - m_Data: 46254
+    - m_Data: 46256
+    - m_Data: 46258
+    - m_Data: 46260
+    - m_Data: 46262
+    - m_Data: 46264
+    - m_Data: 46266
+    - m_Data: 46268
+    - m_Data: 46270
+    - m_Data: 46272
+    - m_Data: 46274
+    - m_Data: 46276
+    - m_Data: 46278
+    - m_Data: 46280
+    - m_Data: 46282
+    - m_Data: 46284
+    - m_Data: 46286
+    - m_Data: 46288
+    - m_Data: 46290
+    - m_Data: 46292
+    - m_Data: 46294
+    - m_Data: 46296
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1788,43 +1790,43 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 47046
-    - m_Data: 47052
-    - m_Data: 47054
-    - m_Data: 47056
-    - m_Data: 47060
-    - m_Data: 47062
-    - m_Data: 47064
-    - m_Data: 47066
-    - m_Data: 47068
-    - m_Data: 47072
-    - m_Data: 47074
-    - m_Data: 47076
-    - m_Data: 47078
-    - m_Data: 47080
-    - m_Data: 47082
-    - m_Data: 47084
-    - m_Data: 47086
-    - m_Data: 47088
-    - m_Data: 47090
-    - m_Data: 47092
-    - m_Data: 47094
-    - m_Data: 47096
-    - m_Data: 47098
-    - m_Data: 47100
-    - m_Data: 47102
-    - m_Data: 47676
-    - m_Data: 47744
-    - m_Data: 47752
-    - m_Data: 47798
-    - m_Data: 47812
-    - m_Data: 100686
-    - m_Data: 148424
-    - m_Data: 148484
+    - m_Data: 44142
+    - m_Data: 46234
+    - m_Data: 46236
+    - m_Data: 46238
+    - m_Data: 46240
+    - m_Data: 46242
+    - m_Data: 46244
+    - m_Data: 46246
+    - m_Data: 46248
+    - m_Data: 46250
+    - m_Data: 46252
+    - m_Data: 46254
+    - m_Data: 46256
+    - m_Data: 46258
+    - m_Data: 46260
+    - m_Data: 46262
+    - m_Data: 46264
+    - m_Data: 46266
+    - m_Data: 46268
+    - m_Data: 46270
+    - m_Data: 46272
+    - m_Data: 46274
+    - m_Data: 46276
+    - m_Data: 46278
+    - m_Data: 46280
+    - m_Data: 46282
+    - m_Data: 46284
+    - m_Data: 46286
+    - m_Data: 46288
+    - m_Data: 46290
+    - m_Data: 46292
+    - m_Data: 46294
+    - m_Data: 46296
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Doodle Snake Variant
-      m_OriginalName: Doodle Snake Variant
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -1832,10 +1834,10 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_Data: 171912
+        m_Data: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
@@ -2153,7 +2155,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID:
-    m_Data: 153812
+    m_Data: 0
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2175,8 +2177,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1353
-    y: 79
+    x: 1354
+    y: 24
     width: 566
     height: 955
   m_SerializedDataModeController:

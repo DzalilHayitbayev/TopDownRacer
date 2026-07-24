@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "PlayerInputActions",
     "maps": [
         {
@@ -40,6 +41,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "UsePowerUp",
+                    "type": "Button",
+                    "id": "c2dd06bf-d679-47f7-a32f-d282cc4b65ed",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -262,6 +272,17 @@
                     "action": "Move4",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ba41dabd-157a-416a-950d-d6a3f8459481",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UsePowerUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

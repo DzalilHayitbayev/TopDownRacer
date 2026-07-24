@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public PlayerWallet Wallet { get; private set; }
     public PlayerGarage Garage { get; private set; }
+    public PlayerPowerUpDeck PowerUpDeck { get; private set; }
 
     public int PendingMoney { get; private set; }
     public int CurrentLapMultiplier { get; private set; } = 1;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             Wallet = new PlayerWallet();
             Garage = new PlayerGarage();
+            PowerUpDeck = new PlayerPowerUpDeck();
         }
         else if (Instance != this)
         {
