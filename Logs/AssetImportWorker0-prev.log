@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.2f1 (7a4c1aeef971) revision 8014874'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 16157 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-JALIK" at "2026-07-26T20:24:10.0255704Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-JALIK" at "2026-07-26T09:00:40.7521731Z"
-Date: 2026-07-26T09:00:40Z
+Date: 2026-07-26T20:24:10Z
 
 COMMAND LINE ARGUMENTS:
 D:\Unity Engines\6000.4.2f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ D:/GitHub Repositories/TopDownRacer
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54049
+64974
 -licensingIpc
 LicenseClient-JALIK
 -force-d3d12
@@ -68,14 +68,14 @@ D:/GitHub Repositories/TopDownRacer
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [12672]  Target information:
+Player connection [17672]  Target information:
 
-Player connection [12672]  * "[IP] 192.168.0.232 [Port] 0 [Flags] 2 [Guid] 1042642028 [EditorId] 1042642028 [Version] 1048832 [Id] WindowsEditor(7,CodeDeafMachine) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17672]  * "[IP] 192.168.0.232 [Port] 0 [Flags] 2 [Guid] 836336244 [EditorId] 836336244 [Version] 1048832 [Id] WindowsEditor(7,CodeDeafMachine) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12672]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1042642028 [EditorId] 1042642028 [Version] 1048832 [Id] WindowsEditor(7,CodeDeafMachine) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17672]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 836336244 [EditorId] 836336244 [Version] 1048832 [Id] WindowsEditor(7,CodeDeafMachine) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12672] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [12672] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17672] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17672] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -87,7 +87,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 237.43 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 7.53 ms, found 5 plugins.
 Initialize engine version: 6000.4.2f1 (7a4c1aeef971)
 [Subsystems] Discovering subsystems at path D:/Unity Engines/6000.4.2f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/GitHub Repositories/TopDownRacer/Assets
@@ -105,29 +105,29 @@ Initialize mono
 Mono path[0] = 'D:/Unity Engines/6000.4.2f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Engines/6000.4.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity Engines/6000.4.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: D:/Unity Engines/6000.4.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/Unity Engines/6000.4.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-JALIK"
 [Licensing::IpcConnector] LicenseClient-JALIK channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-JALIK-6000.4.2" at "2026-07-26T09:00:47.4780822Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-JALIK-6000.4.2" at "2026-07-26T20:24:11.1589744Z"
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity Engines/6000.4.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity Engines/6000.4.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              cc30ab083a7d417dbf72eed922f154a3
-  Correlation Id:          f33c002a429b48a14227bcc5321c4c3a
-  External correlation Id: 3639632437387787345
+  Session Id:              20d388e22b3d4b0bb2519a17489765d6
+  Correlation Id:          d8ff45cca09455a53f6bdef082763bfe
+  External correlation Id: 8778670089339598462
   Machine Id:              IlOBwae/ZcOWG8Q+jjfbS+hA944=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-JALIK-6000.4.2" (connect: 0.00s, validation: 0.00s, handshake: 6.10s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-JALIK-6000.4.2-notifications" at "2026-07-26T09:00:53.5846674Z"
-[Licensing::Module] Licensing Background thread has ended after 12.83s
-[Licensing::Module] Licensing is initialized (took 10.17s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-JALIK-6000.4.2" (connect: 0.00s, validation: 0.00s, handshake: 0.88s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-JALIK-6000.4.2-notifications" at "2026-07-26T20:24:12.0474341Z"
+[Licensing::Module] Licensing Background thread has ended after 2.02s
+[Licensing::Module] Licensing is initialized (took 0.86s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 18967518944140-UnityPersXXXX
@@ -137,7 +137,7 @@ Register platform support module: D:/Unity Engines/6000.4.2f1/Editor/Data/Playba
 Register platform support module: D:/Unity Engines/6000.4.2f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
 [Licensing::Client] Successfully resolved entitlement details
 Register platform support module: D:/Unity Engines/6000.4.2f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 10.179173 seconds.
+Registered in 0.862570 seconds.
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
@@ -148,23 +148,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.345 seconds
-Domain Reload Profiling: 12460ms
-	BeginReloadAssembly (348ms)
-	RebuildCommonClasses (246ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (10237ms)
-	LoadAllAssembliesAndSetupDomain (1270ms)
-		LoadAssemblies (348ms)
-		AnalyzeDomain (1261ms)
-			TypeCache.Refresh (1259ms)
-				TypeCache.ScanAssembly (999ms)
-	FinalizeReload (346ms)
+- Finished resetting the current domain, in  0.343 seconds
+Domain Reload Profiling: 1725ms
+	BeginReloadAssembly (191ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (932ms)
+	LoadAllAssembliesAndSetupDomain (193ms)
+		LoadAssemblies (192ms)
+		AnalyzeDomain (183ms)
+			TypeCache.Refresh (182ms)
+				TypeCache.ScanAssembly (168ms)
+	FinalizeReload (345ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (47ms)
-			BeforeProcessingInitializeOnLoad (68ms)
-			ProcessInitializeOnLoadAttributes (100ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
+			InitializePlatformSupportModulesInManaged (50ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (96ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 ========================================================================
 Worker process is ready to serve import requests
@@ -218,1095 +218,69 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 2.21 ms, found 5 plugins.
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.578 seconds
-Domain Reload Profiling: 2506ms
-	BeginReloadAssembly (179ms)
-		DisableScriptedObjects (4ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (1623ms)
-		LoadAssemblies (1344ms)
-		AnalyzeDomain (393ms)
-			TypeCache.Refresh (340ms)
-				TypeCache.ScanAssembly (325ms)
-			BuildScriptInfoCaches (45ms)
+- Finished resetting the current domain, in  0.593 seconds
+Domain Reload Profiling: 1495ms
+	BeginReloadAssembly (186ms)
+		DisableScriptedObjects (5ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (592ms)
+		LoadAssemblies (452ms)
+		AnalyzeDomain (252ms)
+			TypeCache.Refresh (189ms)
+				TypeCache.ScanAssembly (169ms)
+			BuildScriptInfoCaches (55ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (578ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			BeforeProcessingInitializeOnLoad (112ms)
-			ProcessInitializeOnLoadAttributes (293ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5728 unused Assets / (2.0 MB). Loaded Objects now: 6335.
-Memory consumption went from 119.7 MB to 117.8 MB.
-Total: 6.540100 ms (FindLiveObjects: 0.553300 ms CreateObjectMapping: 0.472000 ms MarkObjects: 4.112400 ms  DeleteObjects: 1.401100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 2397.884358 seconds.
-  path: Assets/PoisonOrb
-  importAddress: Guid(f26a9f4d5c3612248928eb6a82565560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PoisonOrb using Guid(f26a9f4d5c3612248928eb6a82565560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1012ecb3d7dbf18a1f810169e66ccfaa') in 0.0069086 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ea209e2ded41118adfe1127c98482078 DependenciesID=7315ca2e5104b1b541ebc5ba70512675 StaticDependenciesID=f04fd7d3acd5d77954b081e836e61e72 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 94.229293 seconds.
-  path: Assets/Plugins/cars
-  importAddress: Guid(78280014da467f54ea612253ed8c9122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/cars using Guid(78280014da467f54ea612253ed8c9122) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fb61717b2fd07c3cfb384bdbb644c7d6') in 0.0006568 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fb0857d8d3ad9987f9b7ae79f217e065 DependenciesID=49374590bc05f2047b70476a78330eda StaticDependenciesID=cce2b1dc9c0a24301b71c9fefaa98740 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.243222 seconds.
-  path: Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Data Objects
-  importAddress: Guid(ac93e35a37fe549aba7acf2ddfdf93a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Data Objects using Guid(ac93e35a37fe549aba7acf2ddfdf93a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '72fcaef3a35d129f736927e021209c6b') in 0.000383 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9609aa51eaec39dbf0576d4810095ffe DependenciesID=1735b5182cb966765d8f7eb90c6d084a StaticDependenciesID=93c000131ce4d578db75eb197d047d72 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.757985 seconds.
-  path: Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Prefabs/Demo Actor (PLAYER) - Toon Projectiles.prefab
-  importAddress: Guid(ba4e4dafe7fef426ea0e486925699adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Prefabs/Demo Actor (PLAYER) - Toon Projectiles.prefab using Guid(ba4e4dafe7fef426ea0e486925699adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '60efd42f2c20f6f796456448cbddb614') in 0.3855079 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d315392ca5d7cc60ba1a6f285705ca33 DependenciesID=dea0188b88c8e1064d1538d484ddfa57 StaticDependenciesID=1442536ed6974e356bf2d4a4a25281a7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.630046 seconds.
-  path: Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Projectiles
-  importAddress: Guid(fe71b01f13c814f64a4e6a3e6665c790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Projectiles using Guid(fe71b01f13c814f64a4e6a3e6665c790) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4bec934016c4f9916623e90afc58cf17') in 0.0005828 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ea404955757c476d31d4bf0a5ff4a745 DependenciesID=c26ead1e4ef0035417a19a6f72dab6fc StaticDependenciesID=6343cf905662a515bcdb77271da2f3b9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.278526 seconds.
-  path: Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Projectiles/Toon Projectiles - Projectile 2 acid.prefab
-  importAddress: Guid(924a1250417674e098af5c66e549d99a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Projectiles/Toon Projectiles - Projectile 2 acid.prefab using Guid(924a1250417674e098af5c66e549d99a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bf8f523aa06cd73f9cc22682ffd57a75') in 0.0160686 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aaa0ae1b94ad47111a5f4447cebbe786 DependenciesID=b83f47e64bfcc2d0c42f543e71952315 StaticDependenciesID=6937faae19a6a9f34a21a16b36094e26 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.799200 seconds.
-  path: Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Projectiles/Toon Projectiles - Projectile 1 magic.prefab
-  importAddress: Guid(34c5861e0318f47609b31a197b46da7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Magic Pig Games (Infinity PBR)/HOVL - Toon Projectiles/Projectiles/Toon Projectiles - Projectile 1 magic.prefab using Guid(34c5861e0318f47609b31a197b46da7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '327c0c9b36d48169ec9d760bf86901b4') in 0.0143246 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=25f6d1ccd96a2080d36bd1eb9220b4c7 DependenciesID=8aab0a5e03921b22493c580fe6dece70 StaticDependenciesID=be4482afc9dd128610567f8c2e6e267a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.319220 seconds.
-  path: Assets/Engines
-  importAddress: Guid(9dd7d9aba70729c48858a74114f5c53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Engines using Guid(9dd7d9aba70729c48858a74114f5c53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bfd99f320f590c20e1eb7a1d07e418db') in 0.0004378 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=16baf054c3f3805cd44da9ae255b0ef8 DependenciesID=09b0687e07100fb07ed62bb59b7af426 StaticDependenciesID=6e003291fd7f36374cd96965e0c55444 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.406049 seconds.
-  path: Assets/Magic Pig Games (Infinity PBR)
-  importAddress: Guid(199d821c73b0fa1419695bba8e509b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Magic Pig Games (Infinity PBR) using Guid(199d821c73b0fa1419695bba8e509b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ed5948a736a1de22a864aa722921fdf9') in 0.0003894 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6458dc1a0e4fd76ce1d0537cf8bfd821 DependenciesID=43ff6f443000daca94a86a69d51e5252 StaticDependenciesID=3da06fbd3000e6e53dd7afd2a29a73bc 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.PixelPerfect.Editor.Tests.dll at Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Native extension for Android target not found
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.582 seconds
-Domain Reload Profiling: 1509ms
-	BeginReloadAssembly (328ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (76ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (478ms)
-		LoadAssemblies (474ms)
-		AnalyzeDomain (172ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (3ms)
-			BuildScriptInfoCaches (146ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (583ms)
+	FinalizeReload (594ms)
 		SetupLoadedEditorAssemblies (0ms)
 			InitializePlatformSupportModulesInManaged (9ms)
-			BeforeProcessingInitializeOnLoad (115ms)
-			ProcessInitializeOnLoadAttributes (260ms)
-			ProcessInitializeOnLoadMethodAttributes (57ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5745 unused Assets / (2.4 MB). Loaded Objects now: 6369.
-Memory consumption went from 121.5 MB to 119.1 MB.
-Total: 6.871800 ms (FindLiveObjects: 0.556000 ms CreateObjectMapping: 0.399200 ms MarkObjects: 4.045700 ms  DeleteObjects: 1.869800 ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (284ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5751 unused Assets / (2.0 MB). Loaded Objects now: 6365.
+Memory consumption went from 121.8 MB to 119.7 MB.
+Total: 7.064200 ms (FindLiveObjects: 0.548800 ms CreateObjectMapping: 0.388300 ms MarkObjects: 4.053300 ms  DeleteObjects: 2.071800 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-EnvironmentDependencyValues requested are different than current active one (requested -> active):
-  graphicsApiMask: 2048 -> 264192
 ========================================================================
 Received Import Request.
-  Time since last request: 151.416730 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster
-  importAddress: Guid(b56551e9e3ab84e4180b7b30c06ff232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster using Guid(b56551e9e3ab84e4180b7b30c06ff232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e95d24b846bd468d22710ba0b1693305') in 0.0021114 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2a6f44625ec516b79d9b0b73e8187074 DependenciesID=8f4124bb009506fa2b3a011eac0bbce0 StaticDependenciesID=ea02a116dbca52dcc8a0aedadf903818 
+  Time since last request: 43055.891647 seconds.
+  path: Assets/Sources/Scripts C#/GameManager.cs
+  importAddress: Guid(9d0300405b7b0d04386593d29dbb9249) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Sources/Scripts C#/GameManager.cs using Guid(9d0300405b7b0d04386593d29dbb9249) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (Import Result ID: '0e71e4b23b93f9b3afbbc786cac89331') in 0.0761198 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=af111872d06f2d73725435775be6af5d DependenciesID=f93f59b0be77de15656e46072b01ebce StaticDependenciesID=79c234b0cb10473294ca692725b2d8f2 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.286880 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie
-  importAddress: Guid(48190929eb887fb4abaf1cff5c3de87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie using Guid(48190929eb887fb4abaf1cff5c3de87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1b02944d656dfcabfc90c5989661a937') in 0.0005032 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bf4da7e7d7957c5207adedb671a0f113 DependenciesID=23babbb8501dc252289d569038b0e6b2 StaticDependenciesID=d944aa5ca630084e832146c32a861fd1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.555598 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie/CFXR2 Skull Head Alt.prefab
-  importAddress: Guid(463cf9f7af4680240898f6aeba3fe3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie/CFXR2 Skull Head Alt.prefab using Guid(463cf9f7af4680240898f6aeba3fe3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '84f8c825a4f43f677d48a2f2bf39f84e') in 0.2260792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7448fd7cbb0f774bf0005b0048ce3888 DependenciesID=23b7da99377af42045d11bf75e00f306 StaticDependenciesID=83d2994b0398ab7a5ad006ca42fac894 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.196195 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr skull dissolve ab.mat
-  importAddress: Guid(16b22ff79ad97474eb609b48400ecf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr skull dissolve ab.mat using Guid(16b22ff79ad97474eb609b48400ecf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '317d382fd02d1aaf6a703d2c26c12114') in 0.1861591 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=98615e9fc2ba4870d7b1237ccb5ffbf1 DependenciesID=3bf35a7643dd32c7c19e2f164a36884c StaticDependenciesID=0ad77d25a6c4c6a8f805a173e4b44f63 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.962674 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie/CFXR2 WW Enemy Explosion.prefab
-  importAddress: Guid(7ec363c8df426644ea85f8d6d570561c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie/CFXR2 WW Enemy Explosion.prefab using Guid(7ec363c8df426644ea85f8d6d570561c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b91ea8a3a2226b980123204b113364e3') in 0.1471781 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9146597a6a277a35d847cd1bd28db341 DependenciesID=bb9fe835b39536dac9aa8370a04b1790 StaticDependenciesID=41502ad7ee064a7f6fa9f1f3243cd450 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.400179 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie/CFXR2 Souls Escape.prefab
-  importAddress: Guid(b5c8ca7ed10b61e499cce8ec3b6e2e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie/CFXR2 Souls Escape.prefab using Guid(b5c8ca7ed10b61e499cce8ec3b6e2e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1ae6a875fcf345fc52f9334ab5ec5d69') in 0.0848115 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=26a7f5420be08ad40f03538722c3ce05 DependenciesID=87a988b48e6647fa7cd8cd1ad8d29e29 StaticDependenciesID=eac816577069a7ac0fd0f134eedfef82 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.105905 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric
-  importAddress: Guid(db52fee3f874eaf41b3eeab4dc75603c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric using Guid(db52fee3f874eaf41b3eeab4dc75603c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8c8b02b767ce1d1385256306f2e663d9') in 0.0005155 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b3622f420f5af0b24fe7d9ded7e558f5 DependenciesID=b63f0153dd75f49cff8d345cfa4a0c7b StaticDependenciesID=0cfc6395e4a3fd9095e1811543953067 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.921647 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric/CFXR Electrified 3.prefab
-  importAddress: Guid(effb650189dc5714e9e9801b1cfb3991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric/CFXR Electrified 3.prefab using Guid(effb650189dc5714e9e9801b1cfb3991) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2f5b8dfa2e213cd3476d3ef6ab87ddbe') in 0.0794707 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=25f7b954c23b0d7dd757fc3eb31407f5 DependenciesID=0424c0a164a0182adb255a719dbaf8bb StaticDependenciesID=bf5c6854212183844484c539a286c415 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.490013 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric/CFXR2 Sparks Rain.prefab
-  importAddress: Guid(798157bad7358b04499c9d71cd3c0d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric/CFXR2 Sparks Rain.prefab using Guid(798157bad7358b04499c9d71cd3c0d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '52fcb27972b80c268bdf5a925d71d6cb') in 0.1105413 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6296b232089874463d88936c35e368cd DependenciesID=fd7eedb57c7c7b5234bc40200a2a434c StaticDependenciesID=8d9693d0f411178e4234b58c1730a0b8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.127019 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric/CFXR3 Hit Electric C (Air).prefab
-  importAddress: Guid(6718dc24203da53468af9ada8fef7d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric/CFXR3 Hit Electric C (Air).prefab using Guid(6718dc24203da53468af9ada8fef7d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '014fbe0bef60be2e676427e36238daf6') in 0.0891647 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e5e6cab858704282f589c0404a1e80db DependenciesID=4ac49b6b8947b60cb4968920fdea36e0 StaticDependenciesID=f727ab709aba1fa6ad2f91973b739f11 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 33
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.276827 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR Explosion 1.prefab
-  importAddress: Guid(3ef3ae421f71c5c4e97fe12dc2fc6312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR Explosion 1.prefab using Guid(3ef3ae421f71c5c4e97fe12dc2fc6312) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '530b8e20c4a85f6641525e0618c8645c') in 0.0749819 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=942a22de02ec0eea89fba71203217e8e DependenciesID=613ebfcd746a13852abb47e632f31100 StaticDependenciesID=234af74095794342709dea59b879994b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 43
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.682538 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR Explosion Smoke 2 Solo (HDR).prefab
-  importAddress: Guid(4bda94453d2ca7444a0fff05b2d425f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR Explosion Smoke 2 Solo (HDR).prefab using Guid(4bda94453d2ca7444a0fff05b2d425f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fad38a667e3f58eb4f5c10ee7e8ac84f') in 0.074084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4581322ae3e20a73af17c554c81bc3de DependenciesID=68599459926842aa8567ffdd2079feaa StaticDependenciesID=839cc85e5eb3aade67170e6161708151 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.129551 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR2 WW Explosion.prefab
-  importAddress: Guid(2e1e9506f5904a64b81744324fb7cd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR2 WW Explosion.prefab using Guid(2e1e9506f5904a64b81744324fb7cd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '783a3959c44d5e49399364dde73f5b6c') in 0.0460202 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0d04f25a4f187cbfe2665cb4ca4fb829 DependenciesID=0b53ba4591d3e2643846dcd8b23700f4 StaticDependenciesID=3a42ac89b101194dfa9eef0052cd9f4d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 47
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.407369 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR3 Fire Explosion B.prefab
-  importAddress: Guid(99bc28c0d45f51c4fbac01080b73edc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR3 Fire Explosion B.prefab using Guid(99bc28c0d45f51c4fbac01080b73edc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '39996843e1e27917c7a0abe2e417097a') in 0.0415925 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8cf45c9a476080e9228ca8570579151e DependenciesID=51b4335de7fe1096fda79a865d2ed068 StaticDependenciesID=265445fa03b5b1a952660d3ddf6bf216 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.123799 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR4 Firework 1 Cyan-Purple (HDR).prefab
-  importAddress: Guid(ae07f2a45f14a82428409cfe410e6002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR4 Firework 1 Cyan-Purple (HDR).prefab using Guid(ae07f2a45f14a82428409cfe410e6002) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '194c8ced3daaa72b8954c1ab24270cb9') in 0.0592548 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36588a91d31fadb1a8a46251ac73f0c4 DependenciesID=4f01fcc5734894f949c948979a847a32 StaticDependenciesID=8f13bd8d0a61803e687b70e43b26a983 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.621246 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR4 Firework HDR Shoot Single (Random Color).prefab
-  importAddress: Guid(afa54037ffe627545886e2741abb365d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR4 Firework HDR Shoot Single (Random Color).prefab using Guid(afa54037ffe627545886e2741abb365d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1b0244f298162c2720cee4af7ee06b72') in 0.0201125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8acf01a89cc69ec8818c93be70c7a364 DependenciesID=4101dcf403c8e1fa13ef029fe916fd90 StaticDependenciesID=7d8026b6ef95359e4c0912effe4acaf1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 38
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.181316 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts
-  importAddress: Guid(5e6e7335e96924042b46afab21a2df71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts using Guid(5e6e7335e96924042b46afab21a2df71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd6fff5f8c3449148f311c22141196e88') in 0.0004571 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=90d52d35f347e93723c428cf255d0759 DependenciesID=0f61125e862179662b11c4fc2893a727 StaticDependenciesID=da1633622b3afb86adfe699654a8ffe2 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.446107 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Hit A (Red).prefab
-  importAddress: Guid(5c755f9bc5253ea418e919994537dcc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Hit A (Red).prefab using Guid(5c755f9bc5253ea418e919994537dcc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '05168674d58d3a18549f1c2fdbe1b5e3') in 0.0521176 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d1e3895fb782bd3985aaff650da33dc0 DependenciesID=927db9cd7befbdc699fc188ab56b7d1b StaticDependenciesID=0d0e9399721aeb72d9c874587ab093c3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.089483 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Hit D 3D (Yellow).prefab
-  importAddress: Guid(265d3a5ba69981a4698ceabcedf368b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Hit D 3D (Yellow).prefab using Guid(265d3a5ba69981a4698ceabcedf368b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8c3f7326e9aa1c8e62305fed3d1c5e91') in 0.0383063 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0809728610878f9b5bc248ad62825ecf DependenciesID=56ee3cc3a6be6f2b20430f80d7c2a81a StaticDependenciesID=1c9fa306662f4b4f2bef67b3b43f9c9f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.919080 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Impact Glowing HDR (Blue).prefab
-  importAddress: Guid(6398d43fe79ea0140913dc5530c646af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Impact Glowing HDR (Blue).prefab using Guid(6398d43fe79ea0140913dc5530c646af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1c3859d245141bfc8b24907ea9f5ecf8') in 0.0220246 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6e55861eff68ca6ae0e086ede6d7b779 DependenciesID=9bd52394c0d0297ea9eb23f4c7bd37b9 StaticDependenciesID=3464305e2274754e8eac80b5bf37c175 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.158116 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR2 Ground Hit.prefab
-  importAddress: Guid(87ee7299dd44ed747af24dbb91bcd33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR2 Ground Hit.prefab using Guid(87ee7299dd44ed747af24dbb91bcd33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '302bf913ac30d1f79dbe38bcafd4fe10') in 0.0653318 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d198e0871871ddf77682a507d6b4b4f8 DependenciesID=d002ecaf943863f5be450b919270db1e StaticDependenciesID=82e806c0a4ee03b275eb01e37d1406ed 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.733279 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3 Hit Light B (Air).prefab
-  importAddress: Guid(bbf9e36a48d6c5648a13889afab076fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3 Hit Light B (Air).prefab using Guid(bbf9e36a48d6c5648a13889afab076fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '10b4634300447677a12d4e60137ae536') in 0.0177238 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e2aa8a9a8248934ce3b774babb6e24ec DependenciesID=c01e9c7094ede6c07943884acd00485b StaticDependenciesID=b8dfa740753f94d4208b61891f8ca892 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.306475 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3 LightGlow A (Loop).prefab
-  importAddress: Guid(acdb90624a404aa438447006f1026065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3 LightGlow A (Loop).prefab using Guid(acdb90624a404aa438447006f1026065) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '183f85b0b8c3a6ebcf5fc21c6c580262') in 0.0340579 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0b9fce4c81de5b2d574973f1699877d7 DependenciesID=99532b711287748fd92e383537e41c98 StaticDependenciesID=ece2cd2a45d6c46f0eb4f5767a0f4483 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.463716 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light
-  importAddress: Guid(78ded8084a398af4595397de2be10b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light using Guid(78ded8084a398af4595397de2be10b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e021f0d75b330a4d23e5bcf95374ab0d') in 0.0004545 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=65af0f18412b0ccf17dd72a9b088b86a DependenciesID=26812f1fe1d47f16e7c8662523ca4db6 StaticDependenciesID=35247259ca1b1e25c459f6d7b652a6c4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.390434 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Flash.prefab
-  importAddress: Guid(59a35ab9f68edff40b6e5332bed330f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Flash.prefab using Guid(59a35ab9f68edff40b6e5332bed330f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '443a3b291e18505b4206983b573bae01') in 0.0328844 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=99b0d08132a46fc9da6593505b37f207 DependenciesID=7dd36878413bf5a29eded6d6e24d5317 StaticDependenciesID=cced4bcb5106e813d38309d58cc49b80 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.986084 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Magic Poof.prefab
-  importAddress: Guid(c4f829cb7dd4b864caf8832ec5b1ee55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Magic Poof.prefab using Guid(c4f829cb7dd4b864caf8832ec5b1ee55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '04a559e5da9ee58d96e89e3e85a82ccd') in 0.0179839 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bac7642fc251069cb971964cad3132ad DependenciesID=2160cf832fe9b1cfcc44be1e9fc576e9 StaticDependenciesID=ecebe4d663bdc1ebd27138ff9654dfcf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.688768 seconds.
-  path: Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Smoke Source 3D.prefab
-  importAddress: Guid(e509867be4f82f246a95eca1ee5a2d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Smoke Source 3D.prefab using Guid(e509867be4f82f246a95eca1ee5a2d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '62a7c5db6c8a6c3356cc19dd8d58645a') in 0.0182206 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d9881ed710b12d2d28586bc227303021 DependenciesID=1188cf90b50501874f04d4480031cca4 StaticDependenciesID=35b462a4aed66b761cd9715c0f007b42 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.668763 seconds.
-  path: Assets/JMO Assets
-  importAddress: Guid(976974e4d3018034e87caeb9f51f20f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JMO Assets using Guid(976974e4d3018034e87caeb9f51f20f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd081dc9b1e3942cfcb6a908afb0a02cc') in 0.0004556 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=39a1e2e014771a5945b777bc50a90a93 DependenciesID=af0e4a24a6a50f14aba54ec8e7df529c StaticDependenciesID=4207e8721bc5af642bfd147c1d3e4113 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5730 unused Assets / (3.4 MB). Loaded Objects now: 6402.
-Memory consumption went from 122.3 MB to 119.0 MB.
-Total: 7.970200 ms (FindLiveObjects: 0.436400 ms CreateObjectMapping: 0.387700 ms MarkObjects: 4.547800 ms  DeleteObjects: 2.595900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-EnvironmentDependencyValues requested are different than current active one (requested -> active):
-  graphicsApiMask: 2048 -> 264192
-========================================================================
-Received Prepare
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.PixelPerfect.Editor.Tests.dll at Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Native extension for Android target not found
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.602 seconds
-Domain Reload Profiling: 1496ms
-	BeginReloadAssembly (271ms)
-		DisableScriptedObjects (16ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (478ms)
-		LoadAssemblies (452ms)
-		AnalyzeDomain (169ms)
-			TypeCache.Refresh (11ms)
-			BuildScriptInfoCaches (150ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (602ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			BeforeProcessingInitializeOnLoad (124ms)
-			ProcessInitializeOnLoadAttributes (269ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5745 unused Assets / (2.3 MB). Loaded Objects now: 6407.
-Memory consumption went from 122.6 MB to 120.3 MB.
-Total: 6.647900 ms (FindLiveObjects: 0.587500 ms CreateObjectMapping: 0.505200 ms MarkObjects: 4.058400 ms  DeleteObjects: 1.496000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-EnvironmentDependencyValues requested are different than current active one (requested -> active):
-  graphicsApiMask: 2048 -> 264192
-========================================================================
-Received Import Request.
-  Time since last request: 14.725991 seconds.
-  path: Assets/Resources
-  importAddress: Guid(b82192c8cd808a946936a29c57fbfa6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources using Guid(b82192c8cd808a946936a29c57fbfa6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0eafe9c9a1331d537c2e3df02a4aba98') in 0.0020472 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aaf091e0002c34284b803620c6ff9d4e DependenciesID=404a2f73e0f5bdf9461e49ed97f6bed8 StaticDependenciesID=27d9c7a86220706b6e3f888f594c43f9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.604605 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  importAddress: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '687a4693cd8a2de6e9a78a9c4067a6a0') in 0.0005586 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ed762298b59bb6514954732a4a6a55a4 DependenciesID=fe175f941f1b069fd21d4158766e5888 StaticDependenciesID=93266fbf23e4d612bcfee99618ffd8fd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.775317 seconds.
-  path: Assets/Sources/Prefabs/AI/_carBase(AI) Variant.prefab
-  importAddress: Guid(885f73461e93f634e9c5a1546237d98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Prefabs/AI/_carBase(AI) Variant.prefab using Guid(885f73461e93f634e9c5a1546237d98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Refreshing native plugins compatible for Editor in 2.91 ms, found 5 plugins.
- -> (Import Result ID: '54f0ed4f84f6dec16444da0c36ee222c') in 0.2248388 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=18847adc7eec8ec67007c5646186cba6 DependenciesID=6cf209353cd89afb0b3f06fa539065ad StaticDependenciesID=277723e9f90fe8130d789da3bc9d71f9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 245
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr mesh donut.fbx
-  importAddress: Guid(5d48695472dfda94b92ac5316397da95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr mesh donut.fbx using Guid(5d48695472dfda94b92ac5316397da95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '65bc53de1e442b872e24af64f5145352') in 0.2971913 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4a306a10c7d22062e1750cde0376c5e1 DependenciesID=a8258a9b6ee5904f13be5334b991f916 StaticDependenciesID=cbc63469f49505150d51d0ee13ab24fa 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Texts/CFXR _BOING_.prefab
-  importAddress: Guid(cf378989e15716e40a61692dcd97e628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Texts/CFXR _BOING_.prefab using Guid(cf378989e15716e40a61692dcd97e628) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6e5c073fd7dc7feb6fb7eecc740ca150') in 0.1188186 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9ea9a75085b991cf92b386d2abbfa69d DependenciesID=243f2bde5e4f6217cd5d4b53c2320264 StaticDependenciesID=e75439d7ed6b9b6c437feec705e143c4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 98
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Impact Glowing HDR (Blue).prefab
-  importAddress: Guid(6398d43fe79ea0140913dc5530c646af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Impact Glowing HDR (Blue).prefab using Guid(6398d43fe79ea0140913dc5530c646af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '15a76d5e710be34f6610dcc2db616833') in 0.2127525 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6e55861eff68ca6ae0e086ede6d7b779 DependenciesID=f858b024106c3290525d826685758e5e StaticDependenciesID=3464305e2274754e8eac80b5bf37c175 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Hit D 3D (Yellow).prefab
-  importAddress: Guid(265d3a5ba69981a4698ceabcedf368b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Impacts/CFXR Hit D 3D (Yellow).prefab using Guid(265d3a5ba69981a4698ceabcedf368b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5a5579e44b487fb629a4f47e1a94b60f') in 0.0448737 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0809728610878f9b5bc248ad62825ecf DependenciesID=55eb2287d60870cd4d69d62ac1f91f13 StaticDependenciesID=1c9fa306662f4b4f2bef67b3b43f9c9f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000025 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric/CFXR Electrified 3.prefab
-  importAddress: Guid(effb650189dc5714e9e9801b1cfb3991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Electric/CFXR Electrified 3.prefab using Guid(effb650189dc5714e9e9801b1cfb3991) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3aaa26acf5a5e4e9f3ccdff6beb6922d') in 0.0222688 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=25f7b954c23b0d7dd757fc3eb31407f5 DependenciesID=487f5b70dbfe9f98e9ac73f00d081f69 StaticDependenciesID=bf5c6854212183844484c539a286c415 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+  path: Assets/Sources/Prefabs/Player/_carBase(Player).prefab
+  importAddress: Guid(4df16c1a99996c94fa9ad5bd4a717e1a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Sources/Prefabs/Player/_carBase(Player).prefab using Guid(4df16c1a99996c94fa9ad5bd4a717e1a) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter)Refreshing native plugins compatible for Editor in 2.05 ms, found 5 plugins.
+ -> (Import Result ID: '116273246615489c65f9b78486ca683a') in 0.0818797 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4e37c27a05a82d97e0d353f2704421be DependenciesID=63f673ee7c297e50c0e6272f9f1b75e5 StaticDependenciesID=66eb625907838156c4bdbae99b2a6b19 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 136
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Magic Poof.prefab
-  importAddress: Guid(c4f829cb7dd4b864caf8832ec5b1ee55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Magic Poof.prefab using Guid(c4f829cb7dd4b864caf8832ec5b1ee55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e3ca23dc59ef717a9d5ab1ca84eeff5c') in 0.0733037 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bac7642fc251069cb971964cad3132ad DependenciesID=a1bbe5746bad71c6627f004cd700567f StaticDependenciesID=ecebe4d663bdc1ebd27138ff9654dfcf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Flash.prefab
-  importAddress: Guid(59a35ab9f68edff40b6e5332bed330f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Flash.prefab using Guid(59a35ab9f68edff40b6e5332bed330f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '06a2b789abc2cf8a728f556c0c63ead0') in 0.0139165 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=99b0d08132a46fc9da6593505b37f207 DependenciesID=dbc729b783e6dc701affd7efc3209196 StaticDependenciesID=cced4bcb5106e813d38309d58cc49b80 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr electric_arc_circle.fbx
-  importAddress: Guid(b10f0a773262b9c478542ff2d1a04863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr electric_arc_circle.fbx using Guid(b10f0a773262b9c478542ff2d1a04863) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd45044a9e5acaf82246e9735d4916cc1') in 0.1326355 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=73d0a12e428178602a67ab5af695db7b DependenciesID=76ff92a4cbc76b46af9a77fca63b0158 StaticDependenciesID=67fc4ff71bdc0a756c6b024705c9cb01 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.762373 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr mesh foam.fbx
-  importAddress: Guid(efd0ff1193063db498e9ddb30e96e4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr mesh foam.fbx using Guid(efd0ff1193063db498e9ddb30e96e4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '656e9dd595f8fb751c8dc9cbe40d5635') in 0.0225883 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ba9af2a577ca47612cb3cdd164b04f4d DependenciesID=c1b9554d783348dc2ddfdc2d7234f39e StaticDependenciesID=3ad9b874cc95d66d7bc7c0fe84f140e1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr mesh star6.fbx
-  importAddress: Guid(04eb6fb558fc96e408adfdc22a919448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr mesh star6.fbx using Guid(04eb6fb558fc96e408adfdc22a919448) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '19e17f07a709d002f860d538bd87fd0c') in 0.0209909 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=76b49e949d38d72ba061e17e758927ae DependenciesID=60c5d260392b78de1c62acb3aab4847d StaticDependenciesID=7449868e513aed0226b623cde1e62941 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr mesh ring.fbx
-  importAddress: Guid(fd9225d663ccb334dbfa1e5255190553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr mesh ring.fbx using Guid(fd9225d663ccb334dbfa1e5255190553) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e0fdb50a14ef39c1997dcfbcf1396ad4') in 0.1436516 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e9a2e3cdb8455ece8fb24048010d8418 DependenciesID=8846c3011a0511178d517f07622c88de StaticDependenciesID=dfe5639d17459cc11c3c683b36aab3d8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Smoke Source 3D.prefab
-  importAddress: Guid(e509867be4f82f246a95eca1ee5a2d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR Smoke Source 3D.prefab using Guid(e509867be4f82f246a95eca1ee5a2d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e7eb0d75ae2cf2f521a6f329239aa882') in 0.0087094 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d9881ed710b12d2d28586bc227303021 DependenciesID=1714e51941115bfba4ce43cbd4d96389 StaticDependenciesID=35b462a4aed66b761cd9715c0f007b42 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Liquids/CFXR Water Ripples.prefab
-  importAddress: Guid(5a8d99fb95262ea458a7b580f2a1611c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Liquids/CFXR Water Ripples.prefab using Guid(5a8d99fb95262ea458a7b580f2a1611c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1e9e05252999d86a1902994d73650851') in 0.1940812 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=07b9499da16942f8dfdd756548f30cf3 DependenciesID=e8d52bd4765248d4371b539194dda645 StaticDependenciesID=09955b8c635c647e2def3e292e72c2de 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr particle_electric_arc_2.fbx
-  importAddress: Guid(f6ce39f7cf5788047aa637110fa7ebe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Meshes/cfxr particle_electric_arc_2.fbx using Guid(f6ce39f7cf5788047aa637110fa7ebe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2e3ab34b266bd56424b2fdda4d81c253') in 0.2140947 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=42c1bb9321ed65f4d8ef06b65e122b3b DependenciesID=5083eec65f78bf04a6c3e63758877316 StaticDependenciesID=69d916bdcf70ecfdcb6dc05b35593c50 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.937320 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Liquids/CFXR2 Blood Shape Splash.prefab
-  importAddress: Guid(15483e51212e3d74886ea57291f4639a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Liquids/CFXR2 Blood Shape Splash.prefab using Guid(15483e51212e3d74886ea57291f4639a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '72a951ce0d363843c35bed1a7acd30e1') in 0.1497043 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=91a2ea699640ced769aeb7a17088bfaf DependenciesID=6083a97c8aa0ecc2a3fedc14a66a20c3 StaticDependenciesID=c7100f896cb918d98bca061d1ae63ff6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR3 Hit Misc F Smoke.prefab
-  importAddress: Guid(9fe8f8b3288e45a44af36ff8aa04486e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR3 Hit Misc F Smoke.prefab using Guid(9fe8f8b3288e45a44af36ff8aa04486e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f0de416749b1f95a3a17bd03a68b65e7') in 0.0172594 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0ae7e370fd70e6caaed09fbc8fd731d8 DependenciesID=baef1b0cd456c3fcef2d96e5214159cb StaticDependenciesID=90d7f6b94222d59664050ab33e829e0c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Hit Leaves A (Lit).prefab
-  importAddress: Guid(ceec7516237b4104b94300043ca39784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR3 Hit Leaves A (Lit).prefab using Guid(ceec7516237b4104b94300043ca39784) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a99ab60e96840eaff24b3879efc8f0c3') in 0.1414216 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=864a09ced71cbd8d53ca5b9c671e963e DependenciesID=bb16cdf990419f5d2f666768c87db677 StaticDependenciesID=2d15eeece23e650180727a2af9d49b25 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR3 Fire Explosion B.prefab
-  importAddress: Guid(99bc28c0d45f51c4fbac01080b73edc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Explosions/CFXR3 Fire Explosion B.prefab using Guid(99bc28c0d45f51c4fbac01080b73edc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '56e96aa1b2a794fc2f01cda99c52144e') in 0.0141632 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8cf45c9a476080e9228ca8570579151e DependenciesID=e928cdd0caaa190e0f7a26eba53dd6f9 StaticDependenciesID=265445fa03b5b1a952660d3ddf6bf216 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie/CFXR2 Souls Escape.prefab
-  importAddress: Guid(b5c8ca7ed10b61e499cce8ec3b6e2e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Eerie/CFXR2 Souls Escape.prefab using Guid(b5c8ca7ed10b61e499cce8ec3b6e2e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3e74db836783daa7384ab4671dd24a94') in 0.0496064 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=26a7f5420be08ad40f03538722c3ce05 DependenciesID=a8ff5db86cfcf8f791f7ceb28b8c98d0 StaticDependenciesID=eac816577069a7ac0fd0f134eedfef82 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sources/Scripts C#/SpawnCars.cs
+  importAddress: Guid(58b7af72737f29f4996ec651e6e39e23) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e)
+Start importing Assets/Sources/Scripts C#/SpawnCars.cs using Guid(58b7af72737f29f4996ec651e6e39e23) Importer(2089858483,d624ce77472d68a35037170ec1d2d27e) (ScriptedImporter) -> (Import Result ID: 'dbd9139d86456b841d7c62b4adecd99a') in 0.0091767 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c6670d9161c1a668222c8763c98deff4 DependenciesID=0210b4a98c58c421b7d53d95251cfea6 StaticDependenciesID=564d298f9d2119ea0946a33dffb03aec 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Prepare
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-ADTM: Control thread waiting for realtime thread timed out, have to lock...
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.PixelPerfect.Editor.Tests.dll at Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 2.65 ms, found 5 plugins.
-Native extension for Android target not found
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.630 seconds
-Domain Reload Profiling: 2512ms
-	BeginReloadAssembly (1259ms)
-		DisableScriptedObjects (15ms)
-		CreateAndSetChildDomain (1070ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (510ms)
-		LoadAssemblies (434ms)
-		AnalyzeDomain (187ms)
-			TypeCache.Refresh (10ms)
-			BuildScriptInfoCaches (168ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (631ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			BeforeProcessingInitializeOnLoad (119ms)
-			ProcessInitializeOnLoadAttributes (281ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5745 unused Assets / (2.9 MB). Loaded Objects now: 6421.
-Memory consumption went from 122.8 MB to 119.8 MB.
-Total: 8.435600 ms (FindLiveObjects: 0.598900 ms CreateObjectMapping: 0.492300 ms MarkObjects: 4.564500 ms  DeleteObjects: 2.778800 ms)
+Refreshing native plugins compatible for Editor in 2.52 ms, found 5 plugins.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3 unused Assets / (61.6 KB). Loaded Objects now: 6369.
+Memory consumption went from 116.1 MB to 116.1 MB.
+Total: 5.276700 ms (FindLiveObjects: 0.359300 ms CreateObjectMapping: 0.237300 ms MarkObjects: 4.622600 ms  DeleteObjects: 0.055500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 EnvironmentDependencyValues requested are different than current active one (requested -> active):
   graphicsApiMask: 2048 -> 264192
-========================================================================
-Received Import Request.
-  Time since last request: 64.539489 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR2 Broken Heart.prefab
-  importAddress: Guid(7c2a9b83b809a0848915fabd9596b68b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Misc/CFXR2 Broken Heart.prefab using Guid(7c2a9b83b809a0848915fabd9596b68b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0c8cd50c7474ea24fab20da37dd3b7a7') in 0.1393382 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bcf90b97f416326bdc155906da68c81e DependenciesID=f32e6f5aa50b830606bc090ee133dc4b StaticDependenciesID=14239ae41879bb9d8b0adb4cf0234b29 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 41
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Liquids/CFXR4 Bubbles Breath Underwater Loop.prefab
-  importAddress: Guid(7f906c77905876d488e88e99d13c3d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Liquids/CFXR4 Bubbles Breath Underwater Loop.prefab using Guid(7f906c77905876d488e88e99d13c3d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a27e06621923bc478439c578a05f14fe') in 0.0213799 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f5d0178001d61bec5dfc35211aa2c876 DependenciesID=dae299eb5a6b8d3fe2ae09a42ea4161c StaticDependenciesID=b3fb56c7437b166ec7542492a90b6331 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3 Hit Light B (Air).prefab
-  importAddress: Guid(bbf9e36a48d6c5648a13889afab076fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Light/CFXR3 Hit Light B (Air).prefab using Guid(bbf9e36a48d6c5648a13889afab076fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4c687c868718104677668ad1cec89052') in 0.0226232 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e2aa8a9a8248934ce3b774babb6e24ec DependenciesID=3982914ba51922b1ee914b309181cceb StaticDependenciesID=b8dfa740753f94d4208b61891f8ca892 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Magic Misc/CFXR4 Bouncing Glows Bubble (Blue Purple).prefab
-  importAddress: Guid(f6fd568b816c64943a44efc3add3a881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Magic Misc/CFXR4 Bouncing Glows Bubble (Blue Purple).prefab using Guid(f6fd568b816c64943a44efc3add3a881) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '40d5f3fefe0c836578c300be132cf636') in 0.0232493 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=577b61bcb5fd8596c1b9ea89beb6def9 DependenciesID=f239c84b702fe1a7205ba472e5d5dfe1 StaticDependenciesID=46d96cf693ce6f2d66497870529ce698 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.932734 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr proc glow soft add.mat
-  importAddress: Guid(8d244b42458199344aaea0c6c77cbb90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr proc glow soft add.mat using Guid(8d244b42458199344aaea0c6c77cbb90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0490e4c30c55083fa0aa42a115b55435') in 0.0270798 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=46688674cd5a728c127528851b7710f0 DependenciesID=a45febd7b0360de1216d32f22e1e36ed StaticDependenciesID=460c3d1d54b0293b819eb06ff1236226 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.996239 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr proc glow soft hdr p4 add.mat
-  importAddress: Guid(c9a8501c60f73c14c9c50a72b1af44b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr proc glow soft hdr p4 add.mat using Guid(c9a8501c60f73c14c9c50a72b1af44b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9bc81342dd4a7b66e9fd400b185d9123') in 0.0713879 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d297b1a54e1811b62017c8d70c7a66d0 DependenciesID=d56b332872ee67536a86adad06fbc879 StaticDependenciesID=98890cb33606d235ce05047492525c34 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 53.893679 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Texts/CFXR3 _WOW_.prefab
-  importAddress: Guid(1e54877675f6e4a46ad7ca7c4d7a5bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Texts/CFXR3 _WOW_.prefab using Guid(1e54877675f6e4a46ad7ca7c4d7a5bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c54ecdacc3a71cf2e4f6ffa2ffc4e553') in 0.1082832 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4587677a1eb13ff2a00a3562c50cd6e6 DependenciesID=bd60c1ce5626ea9fa50d1e5323a87de7 StaticDependenciesID=e6cde99888e564ac50ba1994a59b1e5f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 94
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.098413 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Sword Trails/Ice/CFXR4 Sword Hit ICE (Cross).prefab
-  importAddress: Guid(0c2509361b13505428ce788b7f846686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Sword Trails/Ice/CFXR4 Sword Hit ICE (Cross).prefab using Guid(0c2509361b13505428ce788b7f846686) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd8342b5e949c6204b6da6977e728844c') in 1.0757266 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1797a53d78706d04ce42388ac921bda6 DependenciesID=3ab0cda19b58ebf3ab7cbabfa3426c1d StaticDependenciesID=fd87f4916d5411becaf97ee36f076098 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 51
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Sword Trails/Plain/CFXR4 Sword Hit PLAIN (Cross).prefab
-  importAddress: Guid(b85d21f3b8fed714bacf0c4fd50fa512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Sword Trails/Plain/CFXR4 Sword Hit PLAIN (Cross).prefab using Guid(b85d21f3b8fed714bacf0c4fd50fa512) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '051026271da9051524a2433448e2695b') in 0.0574918 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8e36a9be6523f11863cac271465aea2 DependenciesID=30e1bd172802975590dbef5de8a9d668 StaticDependenciesID=6b7973f853a2964b9b2f3dfcdc0f4046 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Sword Trails/Ice/CFXR4 Sword Trail ICE (360 Thin Spiral).prefab
-  importAddress: Guid(d552e90926df03a4596ccf40851b2dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Sword Trails/Ice/CFXR4 Sword Trail ICE (360 Thin Spiral).prefab using Guid(d552e90926df03a4596ccf40851b2dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ca4a934581f65938e6d42ed4e5f1fbe2') in 0.0720316 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=be246ace85491ea292af0bf91c6bdb8a DependenciesID=0431b49d5fa4a6205f29ed598c34adfc StaticDependenciesID=f2add15e429e61282200dbf933f42340 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.745344 seconds.
-  path: Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR4 Wind Trails.prefab
-  importAddress: Guid(c248f95ffea8b8543bc7ad0fffe0216d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Nature/CFXR4 Wind Trails.prefab using Guid(c248f95ffea8b8543bc7ad0fffe0216d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '45b27f49efad4e8b8de55c685f026db7') in 0.207403 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=22edc31182fbbbad3f7ccf0f0289d0ab DependenciesID=442afac422d5158bdb03b3af852c8182 StaticDependenciesID=fe88e1121d201c462fa6a9e7c2bebcdf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.453766 seconds.
-  path: Assets/Sources/Prefabs/Player/Pauwsche Variant.prefab
-  importAddress: Guid(2c33218c12330334b8fbf0d4af74b166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sources/Prefabs/Player/Pauwsche Variant.prefab using Guid(2c33218c12330334b8fbf0d4af74b166) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8f6d907c2fef6173b616810ccd8d5275') in 0.1756158 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=99467f7d950dec8c806a37ea7c5b6b50 DependenciesID=7e3d3fd03fa7499ca485c8fb2e648f1d StaticDependenciesID=e1cb80d1447b8864299c39eab2f0d715 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 245
-
-========================================================================
-Received Prepare
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-ADTM: Control thread waiting for realtime thread timed out, have to lock...
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Animation.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Animation.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Aseprite.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Aseprite.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Common.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Common.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.PixelPerfect.Editor.Tests.dll at Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Psdimporter.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Psdimporter.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Sprite.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Sprite.Package.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.SpriteShape.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.SpriteShape.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.2D.Tilemap.Package.EditorTests.dll at Library/ScriptAssemblies/Unity.2D.Tilemap.Package.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Native extension for Android target not found
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'ToonyColorsPro.Demo.Editor' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/Editor/KinoBloom.Editor.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'KinoBloom.Runtime' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/Kino Bloom/KinoBloom.Runtime.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/Plugins/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXR.WelcomeScreen' already exists (Assets/JMO Assets/Welcome Screen/CFXR.WelcomeScreen.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRDemo' already exists (Assets/JMO Assets/Cartoon FX Remaster/Demo Assets/CFXR Demo.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXRRuntime' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR Runtime.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly with name 'CFXREditor' already exists (Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Editor/CFXR Editor.asmdef)
-Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.671 seconds
-Domain Reload Profiling: 2745ms
-	BeginReloadAssembly (1279ms)
-		DisableScriptedObjects (15ms)
-		CreateAndSetChildDomain (1074ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (83ms)
-	LoadAllAssembliesAndSetupDomain (651ms)
-		LoadAssemblies (573ms)
-		AnalyzeDomain (219ms)
-			TypeCache.Refresh (10ms)
-			BuildScriptInfoCaches (199ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (671ms)
-		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			BeforeProcessingInitializeOnLoad (133ms)
-			ProcessInitializeOnLoadAttributes (295ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 2.39 ms, found 5 plugins.
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5745 unused Assets / (2.5 MB). Loaded Objects now: 6424.
-Memory consumption went from 122.9 MB to 120.4 MB.
-Total: 10.197700 ms (FindLiveObjects: 1.015500 ms CreateObjectMapping: 0.785000 ms MarkObjects: 5.714100 ms  DeleteObjects: 2.681000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-EnvironmentDependencyValues requested are different than current active one (requested -> active):
-  graphicsApiMask: 2048 -> 264192
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

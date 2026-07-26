@@ -19,5 +19,5 @@ MonoBehaviour:
   price: 1
   duration: 5
   ammo: 3
-  value: 50
+  value: 10
   prefab: {fileID: 6379759722483230253, guid: 44f1a57b36056834c9d74a86dfda3e1c, type: 3}

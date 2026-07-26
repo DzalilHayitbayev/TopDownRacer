@@ -119,7 +119,7 @@ public class CarPowerUpInventory : MonoBehaviour
     }
     private void ApplyShockWave()
     {
-        float radius = currentPowerUp.value;
+        float radius = currentPowerUp.value/4f;
         int damage = (int)currentPowerUp.value;
         float force = 12f;
 
@@ -190,7 +190,7 @@ public class CarPowerUpInventory : MonoBehaviour
 
             if (mineObj.TryGetComponent<Mine2D>(out var mine))
             {
-                mine.Setup(gameObject, currentPowerUp.value);
+                mine.Setup(currentPowerUp.value);
             }
         }
     }
