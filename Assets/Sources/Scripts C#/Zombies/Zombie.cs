@@ -8,14 +8,24 @@ public class Zombie : MonoBehaviour
     [SerializeField] private float moveSpeed = 2.5f;
     [SerializeField] private int attackDamage = 10;
     [SerializeField] private float attackCooldown = 1.0f;
-    [SerializeField] private float attackRange = 2.0f;
+    [SerializeField] private float attackRange = 2.0f; // Дистанция для начала атаки
     [SerializeField] private float detectionRadius = 50f;
     [SerializeField] private float targetSearchInterval = 0.5f;
 
+    [Header("Attack Point (AoE)")]
+    [SerializeField] private Transform attackPoint;        // Точка, где происходит удар (дочерний Transform)
+    [SerializeField] private float attackAreaRadius = 1.0f; // Радиус нанесения урона вокруг attackPoint
+
+    [Header("Impact Settings (Crushing)")]
+    [SerializeField] private bool isHeavyZombie = false;
+    [SerializeField] private float minSpeedToCrush = 2.0f;
+    [SerializeField] private float deathImpulseForce = 8f;
+    [SerializeField] private int heavyRamDamage = 25;
+
     [Header("Separation (Anti-Crowding)")]
-    [SerializeField] private LayerMask zombieLayer;           // Слой с зомби
-    [SerializeField] private float separationRadius = 1.2f;    // Радиус личного пространства
-    [SerializeField] private float separationWeight = 1.5f;    // Сила расталкивания
+    [SerializeField] private LayerMask zombieLayer;
+    [SerializeField] private float separationRadius = 1.2f;
+    [SerializeField] private float separationWeight = 1.5f;
 
     [Header("Targeting")]
     [SerializeField] private LayerMask vehicleLayer;
@@ -24,12 +34,14 @@ public class Zombie : MonoBehaviour
     [SerializeField] private Rigidbody2D rb2d;
     [SerializeField] private Animator animator;
     [SerializeField] private Health health;
+    [SerializeField] private Collider2D zombieCollider;
 
     private Transform currentTargetVehicle;
     private IDamageable targetDamageable;
     private float lastAttackTime;
     private float lastSearchTime;
     private bool isMoving;
+    private bool isDying = false;
 
     private static readonly int IsMovingHash = Animator.StringToHash("IsMoving");
     private static readonly int AttackHash = Animator.StringToHash("Attack");
@@ -40,12 +52,22 @@ public class Zombie : MonoBehaviour
     {
         if (health == null) health = GetComponent<Health>();
         if (rb2d == null) rb2d = GetComponent<Rigidbody2D>();
+        if (zombieCollider == null) zombieCollider = GetComponent<Collider2D>();
     }
 
     private void OnEnable()
     {
         if (health == null) health = GetComponent<Health>();
         if (rb2d == null) rb2d = GetComponent<Rigidbody2D>();
+        if (zombieCollider == null) zombieCollider = GetComponent<Collider2D>();
+
+        isDying = false;
+
+        if (zombieCollider != null)
+        {
+            zombieCollider.isTrigger = false;
+            zombieCollider.enabled = true;
+        }
 
         if (health != null)
         {
@@ -71,7 +93,7 @@ public class Zombie : MonoBehaviour
 
     private void Update()
     {
-        if (health == null || !health.IsAlive) return;
+        if (health == null || !health.IsAlive || isDying) return;
 
         if (Time.time >= lastSearchTime + targetSearchInterval)
         {
@@ -104,7 +126,7 @@ public class Zombie : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (health == null || !health.IsAlive || currentTargetVehicle == null) return;
+        if (health == null || !health.IsAlive || isDying || currentTargetVehicle == null) return;
 
         if (isMoving)
         {
@@ -114,30 +136,19 @@ public class Zombie : MonoBehaviour
 
     private void MoveAndRotateTowardsTarget()
     {
-        // 1. Основной вектор направления к машине
         Vector2 directionToTarget = ((Vector2)currentTargetVehicle.position - rb2d.position).normalized;
-
-        // 2. Вектор расталкивания от других зомби
         Vector2 separationVector = ComputeSeparationForce();
-
-        // 3. Итоговое направление движения (сочетание движения к цели + отталкивание)
         Vector2 finalDirection = (directionToTarget + separationVector * separationWeight).normalized;
 
-        // Поворачиваем зомби по итоговому направлению
         float angle = Mathf.Atan2(finalDirection.y, finalDirection.x) * Mathf.Rad2Deg;
         rb2d.rotation = angle;
 
-        // Перемещаем
         Vector2 nextPosition = rb2d.position + finalDirection * (moveSpeed * Time.fixedDeltaTime);
         rb2d.MovePosition(nextPosition);
     }
 
-    /// <summary>
-    /// Вычисляет вектор отталкивания от соседних зомби
-    /// </summary>
     private Vector2 ComputeSeparationForce()
     {
-        // Если слой зомби не задан, ищем среди слоя своего коллайдера
         LayerMask maskToUse = zombieLayer.value != 0 ? zombieLayer : (LayerMask)(1 << gameObject.layer);
 
         Collider2D[] nearbyZombies = Physics2D.OverlapCircleAll(rb2d.position, separationRadius, maskToUse);
@@ -146,7 +157,6 @@ public class Zombie : MonoBehaviour
 
         foreach (var col in nearbyZombies)
         {
-            // Пропускаем самого себя
             if (col.gameObject == gameObject || col.transform.IsChildOf(transform)) continue;
 
             Vector2 pushAwayVector = rb2d.position - (Vector2)col.transform.position;
@@ -154,7 +164,6 @@ public class Zombie : MonoBehaviour
 
             if (distance > 0.001f)
             {
-                // Чем ближе сосед, тем сильнее отталкиваемся
                 separationForce += pushAwayVector.normalized / distance;
                 neighborCount++;
             }
@@ -211,15 +220,63 @@ public class Zombie : MonoBehaviour
 
         if (animator != null) animator.SetTrigger(AttackHash);
 
-        if (targetDamageable != null && targetDamageable.IsAlive)
+        // Используем attackPoint, если он назначен, иначе бьем перед собой/из центра
+        Vector2 pointToCheck = attackPoint != null ? (Vector2)attackPoint.position : (Vector2)transform.position;
+
+        // Находим все объекты в Layer 'vehicleLayer' вокруг точки атаки
+        Collider2D[] hitObjects = Physics2D.OverlapCircleAll(pointToCheck, attackAreaRadius, vehicleLayer);
+
+        foreach (var col in hitObjects)
         {
-            targetDamageable.TakeDamage(attackDamage, gameObject);
+            IDamageable damageable = col.GetComponentInParent<IDamageable>();
+            if (damageable != null && damageable.IsAlive)
+            {
+                damageable.TakeDamage(attackDamage, gameObject);
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isDying || health == null || !health.IsAlive) return;
+
+        if (((1 << collision.gameObject.layer) & vehicleLayer) != 0 || collision.transform.root.CompareTag("Player"))
+        {
+            Rigidbody2D vehicleRb = collision.rigidbody;
+            float speed = vehicleRb != null ? vehicleRb.linearVelocity.magnitude : 0f;
+
+            if (speed >= minSpeedToCrush)
+            {
+                if (!isHeavyZombie)
+                {
+                    if (zombieCollider != null)
+                    {
+                        zombieCollider.isTrigger = true;
+                    }
+
+                    health.TakeDamage(health.CurrentHealth, collision.gameObject);
+                }
+                else
+                {
+                    if (collision.gameObject.TryGetComponent<IDamageable>(out var vehicleDamageable))
+                    {
+                        vehicleDamageable.TakeDamage(heavyRamDamage, gameObject);
+                    }
+                    else if (collision.transform.root.TryGetComponent<IDamageable>(out var rootDamageable))
+                    {
+                        rootDamageable.TakeDamage(heavyRamDamage, gameObject);
+                    }
+
+                    int crushDamage = Mathf.RoundToInt(speed * 10f);
+                    health.TakeDamage(crushDamage, collision.gameObject);
+                }
+            }
         }
     }
 
     private void HandleHit()
     {
-        if (animator != null && health.IsAlive)
+        if (animator != null && health.IsAlive && !isDying)
         {
             animator.SetTrigger(HitHash);
         }
@@ -227,11 +284,25 @@ public class Zombie : MonoBehaviour
 
     private void HandleDeath()
     {
+        if (isDying) return;
+        isDying = true;
         isMoving = false;
+
         if (animator != null) animator.SetTrigger(DieHash);
+
+        if (zombieCollider != null)
+        {
+            zombieCollider.isTrigger = true;
+        }
 
         if (health != null && health.LastAttacker != null)
         {
+            if (health.LastAttacker.TryGetComponent<Rigidbody2D>(out var attackerRb))
+            {
+                Vector2 pushDirection = attackerRb.linearVelocity.normalized;
+                rb2d.AddForce(pushDirection * deathImpulseForce, ForceMode2D.Impulse);
+            }
+
             if (health.LastAttacker.CompareTag("Player") || health.LastAttacker.transform.root.CompareTag("Player"))
             {
                 if (GameManager.Instance != null)
@@ -254,10 +325,17 @@ public class Zombie : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        // Рисуем область урона вокруг attackPoint (синий шар)
+        if (attackPoint != null)
+        {
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(attackPoint.position, attackAreaRadius);
+        }
+
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
 
-        // Зелёная окружность — зона расталкивания с сородичами
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, separationRadius);
     }

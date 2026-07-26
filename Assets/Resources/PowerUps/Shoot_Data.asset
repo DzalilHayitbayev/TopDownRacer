@@ -15,9 +15,9 @@ MonoBehaviour:
   type: 4
   powerUpName: Shoot
   title: Have you ever played CS?
-  icon: {fileID: 582693087578622951, guid: 48632585c80423549b302c48744de2f4, type: 3}
+  icon: {fileID: -9087298098232332564, guid: ecf7096bead16a74d90986b44c5f3555, type: 3}
   price: 1
   duration: 5
   ammo: 3
   value: 50
-  prefab: {fileID: 0}
+  prefab: {fileID: 6138757156472988924, guid: aadd1a0ff6a75b945900c8b6868b82f9, type: 3}

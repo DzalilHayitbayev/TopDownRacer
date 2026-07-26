@@ -24,11 +24,14 @@ public class InGameMenuUIHandler : MonoBehaviour
 
     public void OnRaceAgain()
     {
+        GameManager.Instance.RaceCompleateStateChange(RaceResult.Completed);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void OnExiMenu()
     {
+        GameManager.Instance.ClearDeckAndSave();
+        GameManager.Instance.RaceCompleateStateChange(RaceResult.Completed);
         SceneManager.LoadScene(0);
     }
 

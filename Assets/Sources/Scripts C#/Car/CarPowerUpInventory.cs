@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class CarPowerUpInventory : MonoBehaviour
     public PowerUpData currentPowerUp;
     public bool isActive = false;
     public int currentAmmo = 0;
+    public event Action<PowerUpData> OnPowerUpChanged;
 
     [Header("Spawn Points for Mine/Shoot")]
     [SerializeField] private Transform shootPoint;
@@ -16,10 +18,11 @@ public class CarPowerUpInventory : MonoBehaviour
     [SerializeField] private GameObject shieldVisual;
 
     private Rigidbody2D carRigidbody;
-
+    private Health health;
     private void Awake()
     {
         carRigidbody = GetComponent<Rigidbody2D>();
+        health = GetComponent<Health>();
         if (shieldVisual != null) shieldVisual.SetActive(false);
     }
 
@@ -29,6 +32,8 @@ public class CarPowerUpInventory : MonoBehaviour
 
         currentPowerUp = data;
         currentAmmo = data.type == PowerUpType.Shoot ? data.ammo : 0;
+
+        OnPowerUpChanged?.Invoke(currentPowerUp);
 
         Debug.Log($"[{gameObject.name}] Поднял PowerUp: {data.powerUpName}");
         return true;
@@ -76,6 +81,7 @@ public class CarPowerUpInventory : MonoBehaviour
         isActive = true;
         PowerUpData data = currentPowerUp;
         currentPowerUp = null;
+        OnPowerUpChanged?.Invoke(null);
 
         float timer = 0f;
         while (timer < data.duration)
@@ -95,33 +101,48 @@ public class CarPowerUpInventory : MonoBehaviour
 
         PowerUpData data = currentPowerUp;
         currentPowerUp = null;
+        OnPowerUpChanged?.Invoke(null);
 
+        health.IsUnderSheild(true);
         yield return new WaitForSeconds(data.duration);
 
         if (shieldVisual != null) shieldVisual.SetActive(false);
+        health.IsUnderSheild(false);
         isActive = false;
     }
-
     private void ApplyRepair()
     {
-        Debug.Log($"[{gameObject.name}] Машина отремонтирована!");
+        if (health != null && currentPowerUp != null)
+        {
+            health.Heal((int)currentPowerUp.value);
+        }
     }
-
     private void ApplyShockWave()
     {
+        float radius = currentPowerUp.value;
+        int damage = (int)currentPowerUp.value;
+        float force = 12f;
+
         if (currentPowerUp.prefab != null)
         {
             Instantiate(currentPowerUp.prefab, transform.position, transform.rotation);
         }
-        else
+
+        Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, radius);
+
+        foreach (var hit in targets)
         {
-            Collider[] colliders = Physics.OverlapSphere(transform.position, currentPowerUp.value);
-            foreach (var hit in colliders)
+            if (hit.gameObject == gameObject) continue;
+
+            if (hit.TryGetComponent<IDamageable>(out var damageable))
             {
-                if (hit.gameObject != gameObject && hit.TryGetComponent<Rigidbody>(out var rb))
-                {
-                    rb.AddExplosionForce(1000f, transform.position, currentPowerUp.value, 1f, ForceMode.Impulse);
-                }
+                damageable.TakeDamage(damage, gameObject);
+            }
+
+            if (hit.TryGetComponent<Rigidbody2D>(out var targetRb))
+            {
+                Vector2 direction = (hit.transform.position - transform.position).normalized;
+                targetRb.AddForce(direction * force, ForceMode2D.Impulse);
             }
         }
     }
@@ -131,9 +152,25 @@ public class CarPowerUpInventory : MonoBehaviour
         if (currentAmmo <= 0) return;
 
         Transform spawnLocation = shootPoint != null ? shootPoint : transform;
+
         if (currentPowerUp.prefab != null)
         {
-            Instantiate(currentPowerUp.prefab, spawnLocation.position, spawnLocation.rotation);
+            GameObject projectileObj = Instantiate(currentPowerUp.prefab, spawnLocation.position, spawnLocation.rotation);
+
+            if (projectileObj.TryGetComponent<Projectile2D>(out var projectile))
+            {
+                Vector2 shootDirection = spawnLocation.up;
+
+                float slowFactor = 0.4f;
+
+                projectile.Setup(
+                    gameObject,
+                    currentPowerUp.value, 
+                    slowFactor,           
+                    shootDirection,
+                    carRigidbody.linearVelocity
+                );
+            }
         }
 
         currentAmmo--;
@@ -143,19 +180,24 @@ public class CarPowerUpInventory : MonoBehaviour
             ClearInventory();
         }
     }
-
     private void ExecuteDropMine()
     {
         Transform spawnLocation = minePoint != null ? minePoint : transform;
+
         if (currentPowerUp.prefab != null)
         {
-            Instantiate(currentPowerUp.prefab, spawnLocation.position, spawnLocation.rotation);
+            GameObject mineObj = Instantiate(currentPowerUp.prefab, spawnLocation.position, spawnLocation.rotation);
+
+            if (mineObj.TryGetComponent<Mine2D>(out var mine))
+            {
+                mine.Setup(gameObject, currentPowerUp.value);
+            }
         }
     }
-
     private void ClearInventory()
     {
         currentPowerUp = null;
+        OnPowerUpChanged?.Invoke(null);
         currentAmmo = 0;
     }
 

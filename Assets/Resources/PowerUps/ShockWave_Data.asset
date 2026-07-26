@@ -15,9 +15,9 @@ MonoBehaviour:
   type: 3
   powerUpName: Shock Wave
   title: Desepticon was named like that
-  icon: {fileID: 582693087578622951, guid: 48632585c80423549b302c48744de2f4, type: 3}
+  icon: {fileID: -2379844703187423015, guid: 54018ec980d55d44399c373a8bfcb632, type: 3}
   price: 1
   duration: 5
   ammo: 3
   value: 50
-  prefab: {fileID: 0}
+  prefab: {fileID: 2708598583397607911, guid: 6398d43fe79ea0140913dc5530c646af, type: 3}

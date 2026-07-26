@@ -19,22 +19,22 @@ public class PowerUpSelectionPanel : MonoBehaviour
     private PlayerPowerUpDeck _deck;
     private PlayerWallet _wallet;
 
-    private void Start()
+    private void Awake()
     {
-        if (GameManager.Instance != null)
-        {
-            _deck = GameManager.Instance.PowerUpDeck;
-            _wallet = GameManager.Instance.Wallet;
-        }
-
+        // Инициализируем слоты при старте объекта
         InitSlots();
-        RefreshUI();
     }
 
     private void OnEnable()
     {
+        // Гарантируем получение актуальных ссылок из GameManager до подписки
+        EnsureReferences();
+
         if (_deck != null)
+        {
+            _deck.OnDeckUpdated -= RefreshUI; // Защита от дублирования подписки
             _deck.OnDeckUpdated += RefreshUI;
+        }
 
         RefreshUI();
     }
@@ -42,7 +42,24 @@ public class PowerUpSelectionPanel : MonoBehaviour
     private void OnDisable()
     {
         if (_deck != null)
+        {
             _deck.OnDeckUpdated -= RefreshUI;
+        }
+    }
+
+    private void Start()
+    {
+        EnsureReferences();
+        RefreshUI();
+    }
+
+    private void EnsureReferences()
+    {
+        if (GameManager.Instance != null)
+        {
+            if (_deck == null) _deck = GameManager.Instance.PowerUpDeck;
+            if (_wallet == null) _wallet = GameManager.Instance.Wallet;
+        }
     }
 
     public void ShowPowerUpPanel()
@@ -50,6 +67,7 @@ public class PowerUpSelectionPanel : MonoBehaviour
         if (panelRoot != null) panelRoot.SetActive(true);
         else gameObject.SetActive(true);
 
+        EnsureReferences();
         RefreshUI();
     }
 
@@ -77,30 +95,44 @@ public class PowerUpSelectionPanel : MonoBehaviour
 
     private void OnSlotClicked(PowerUpSlotUI slot)
     {
-        if (_deck == null || slot.Data == null || _wallet == null) return;
+        EnsureReferences();
 
-        // Переключаем покупку/отмену закупки на одну гонку
-        _deck.TogglePurchasePowerUp(slot.Data, _wallet);
+        if (_deck == null || slot.Data == null || _wallet == null)
+        {
+            Debug.LogError("[PowerUpSelectionPanel] _deck или _wallet не найдены в GameManager!");
+            return;
+        }
+
+        // Переключаем покупку/продажу
+        bool success = _deck.TogglePurchasePowerUp(slot.Data, _wallet);
+
+        // Явный вызов обновления UI на случай, если событие где-то потерялось
+        if (success)
+        {
+            RefreshUI();
+        }
     }
 
     public void RefreshUI()
     {
+        EnsureReferences();
+
         if (_deck == null) return;
 
         foreach (var slot in uiSlots)
         {
             if (slot.Data == null) continue;
 
-            // В одноразовой системе "куплен на гонку" и "выбран" — это одно состояние
             bool isSelected = _deck.IsPowerUpSelected(slot.Data.type);
 
+            // Передаем статус покупки/выбора в слот
             slot.UpdateState(isSelected, isSelected);
         }
     }
 
     public void OnStartRaceButtonPressed()
     {
-        int targetScene = selectLevelUIHandler.SelectedLevelIndex;
+        int targetScene = selectLevelUIHandler != null ? selectLevelUIHandler.SelectedLevelIndex : -1;
         if (targetScene >= 0)
         {
             SceneManager.LoadScene(targetScene);
@@ -114,6 +146,9 @@ public class PowerUpSelectionPanel : MonoBehaviour
     public void OnBackToLevelSelectionPressed()
     {
         HidePowerUpPanel();
-        selectLevelUIHandler.ShowLevelSelectionUI();
+        if (selectLevelUIHandler != null)
+        {
+            selectLevelUIHandler.ShowLevelSelectionUI();
+        }
     }
 }

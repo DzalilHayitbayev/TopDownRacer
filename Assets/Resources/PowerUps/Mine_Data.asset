@@ -15,9 +15,9 @@ MonoBehaviour:
   type: 5
   powerUpName: Mine
   title: It is like a Shit
-  icon: {fileID: 582693087578622951, guid: 48632585c80423549b302c48744de2f4, type: 3}
+  icon: {fileID: -6410556371536613056, guid: 15ac24ddca34265438048c6a76c582f2, type: 3}
   price: 1
   duration: 5
   ammo: 3
   value: 50
-  prefab: {fileID: 0}
+  prefab: {fileID: 6379759722483230253, guid: 44f1a57b36056834c9d74a86dfda3e1c, type: 3}

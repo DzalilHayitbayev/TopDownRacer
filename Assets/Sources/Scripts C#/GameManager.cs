@@ -1,9 +1,13 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public enum GameStates { countDown, running, raceOver };
+
+// Причина окончания гонки для игрока
+public enum RaceResult { Completed, Destroyed, Aborted }
 
 public class GameManager : MonoBehaviour
 {
@@ -25,9 +29,12 @@ public class GameManager : MonoBehaviour
 
     public int PendingMoney { get; private set; }
     public int CurrentLapMultiplier { get; private set; } = 1;
+    public RaceResult LastRaceResult { get; private set; } = RaceResult.Completed;
+    private Health playerHealth;
 
     public event Action<GameManager> OnGameStateChanged;
     public event Action<int> OnPendingMoneyChanged;
+    public event Action<RaceResult> OnRaceEndedWithResult;
 
 
     private void Awake()
@@ -56,9 +63,7 @@ public class GameManager : MonoBehaviour
     void LevelStart()
     {
         gameState = GameStates.countDown;
-
         ResetRaceMoney();
-
         Debug.Log("Level started");
     }
 
@@ -72,9 +77,13 @@ public class GameManager : MonoBehaviour
         if (gameState != newGameState)
         {
             gameState = newGameState;
-
             OnGameStateChanged?.Invoke(this);
         }
+    }
+
+    public void RaceCompleateStateChange(RaceResult raceResult)
+    {
+        LastRaceResult = raceResult;
     }
 
     public float GetRaceTime()
@@ -128,16 +137,18 @@ public class GameManager : MonoBehaviour
     public void OnRaceStart()
     {
         Debug.Log("Race started");
-
         raceStartedTime = Time.time;
-
         ChangeGameState(GameStates.running);
     }
 
+    // 1. Успешный финиш гонки
     public void OnRaceCompleated()
     {
-        Debug.Log("Race compleated");
+        if (gameState == GameStates.raceOver) return;
 
+        Debug.Log("Race completed successfully!");
+
+        LastRaceResult = RaceResult.Completed;
         raceCompletedTime = Time.time;
 
         if (PendingMoney > 0 && Wallet != null)
@@ -145,9 +156,84 @@ public class GameManager : MonoBehaviour
             Wallet.SaveEarnedMoney(PendingMoney);
         }
 
+        // Заряды больше НЕ сгорают здесь — игрок сможет перезапустить гонку с ними
         ChangeGameState(GameStates.raceOver);
-        PowerUpDeck.ConsumeSelectedPowerUps();
+        OnRaceEndedWithResult?.Invoke(LastRaceResult);
     }
+
+    // 2. Уничтожение игрока во время гонки
+    public void OnPlayerDestroyed()
+    {
+        if (gameState == GameStates.raceOver) return;
+
+        Debug.Log("Player was destroyed! Race Over.");
+
+        LastRaceResult = RaceResult.Destroyed;
+        raceCompletedTime = Time.time;
+
+        // При уничтожении заработанные деньги сгорают
+        PendingMoney = 0;
+        OnPendingMoneyChanged?.Invoke(PendingMoney);
+
+        // Заряды больше НЕ сгорают здесь
+        ChangeGameState(GameStates.raceOver);
+        OnRaceEndedWithResult?.Invoke(LastRaceResult);
+    }
+
+    // 3. Выход из гонки через меню паузы
+    public void OnPlayerQuitRace()
+    {
+        if (gameState == GameStates.raceOver) return;
+
+        Debug.Log("Player quit the race via Pause Menu.");
+
+        LastRaceResult = RaceResult.Aborted;
+        raceCompletedTime = Time.time;
+
+        // Накопленные деньги за заезд не начисляются
+        PendingMoney = 0;
+        OnPendingMoneyChanged?.Invoke(PendingMoney);
+
+        UnregisterPlayerHealth();
+        ChangeGameState(GameStates.raceOver);
+        OnRaceEndedWithResult?.Invoke(LastRaceResult);
+    }
+
+    /// <summary>
+    /// Вызывай этот метод при нажатии на кнопку "Выход в меню" в UI
+    /// </summary>
+    public void ClearDeckAndSave()
+    {
+        PowerUpDeck?.ClearDeckAndSave();;
+    }
+
+    #region Player Registration Logic
+    public void RegisterPlayerHealth(Health health)
+    {
+        UnregisterPlayerHealth(); // Отписываемся от старого, если был
+
+        playerHealth = health;
+        if (playerHealth != null)
+        {
+            playerHealth.OnDied += HandlePlayerDied;
+        }
+    }
+
+    public void UnregisterPlayerHealth()
+    {
+        if (playerHealth != null)
+        {
+            playerHealth.OnDied -= HandlePlayerDied;
+            playerHealth = null;
+        }
+    }
+
+    private void HandlePlayerDied()
+    {
+        OnPlayerDestroyed();
+    }
+
+    #endregion
 
     public void OnEnable()
     {
@@ -157,6 +243,7 @@ public class GameManager : MonoBehaviour
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        UnregisterPlayerHealth();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)

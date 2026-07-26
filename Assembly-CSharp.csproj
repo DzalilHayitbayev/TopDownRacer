@@ -62,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Sources\Input Actions\PlayerInputActions.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\Car\CarDebuffHandler.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\PowerUp\Mine\Mine2D.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\EnemyPowerUpController.cs" />
     <Compile Include="Assets\Sources\Scripts C#\PowerUp\PowerUpData.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\VehicleSpeedAttacker.cs" />
     <Compile Include="Assets\Sources\Scripts C#\GameManager.cs" />
@@ -72,6 +75,7 @@
     <Compile Include="Assets\Sources\Scripts C#\Driver\DriverInfo.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\WheelParticleHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\AI\DrawPathHandler.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\PowerUp\PowerUpDisplayUI.cs" />
     <Compile Include="Assets\Sources\Scripts C#\CheckPoint.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\CarColorApplier.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\CarLapCounter.cs" />
@@ -86,6 +90,7 @@
     <Compile Include="Assets\Sources\Scripts C#\GhostCar\GhostCarRecorder.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Health.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Zombies\ZombieSpawner.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\PowerUp\Projectile\Projectile2D.cs" />
     <Compile Include="Assets\Sources\Scripts C#\JumpData.cs" />
     <Compile Include="Assets\Sources\Scripts C#\PositionHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Player\PlayerPowerUpDeck.cs" />
@@ -111,6 +116,7 @@
     <Compile Include="Assets\Sources\Scripts C#\Car\WheelTrailRendererHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Player\PlayerGarage.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\CarLayerHandler.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\UI\HealthUI.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\CarSFXHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\PowerUp\PowerUpBox.cs" />
   </ItemGroup>
@@ -1421,6 +1427,30 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{9631169B-7E13-43BE-C0C8-2562BBC588E5}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXREditor.csproj">
+      <Project>{B998CFC7-57CA-6128-8C17-381250DAE9CF}</Project>
+      <Name>CFXREditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
+      <Project>{12372BBA-F46E-662F-6C9B-01C1A8951DE3}</Project>
+      <Name>ToonyColorsPro.Demo.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="KinoBloom.Runtime.csproj">
+      <Project>{10F282A6-6BFB-044B-296B-3DCAEBC5558C}</Project>
+      <Name>KinoBloom.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXR.WelcomeScreen.csproj">
+      <Project>{6B7F6390-797A-1894-5B8C-0E564CE5505A}</Project>
+      <Name>CFXR.WelcomeScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRDemo.csproj">
+      <Project>{F9D62AC0-A896-F371-49C1-B385D2D4F069}</Project>
+      <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="CFXRRuntime.csproj">
+      <Project>{0E908CFF-7D10-7D2F-882E-D18F25612F99}</Project>
+      <Name>CFXRRuntime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

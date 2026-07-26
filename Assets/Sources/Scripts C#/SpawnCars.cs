@@ -5,8 +5,10 @@ using Unity.Cinemachine;
 using UnityEngine;
 public class SpawnCars : MonoBehaviour
 {
+    [SerializeField] private PowerUpDisplayUI powerUpDisplayUI;
     [SerializeField] CinemachineCamera playerCinemachineCamera;
     [SerializeField] ZombieSpawner zombieSpawner;
+    [SerializeField] HealthUI healthUI;
     int numberOfCarsSpawned = 0;
 
     void Start()
@@ -51,12 +53,18 @@ public class SpawnCars : MonoBehaviour
                     }
                     else
                     {
+                        car.GetComponent<EnemyPowerUpController>().enabled = false;
                         car.GetComponent<CarAIHandler>().enabled = false;
                         car.GetComponent<AStarLite>().enabled = false;
                         car.GetComponentInChildren<CarColorApplier>().ApplyColor(carData.CarColorSchemes[driverInfo.carColorIndex].ColorSprite); zombieSpawner.SetPlayerCarLapCounter(car.GetComponent<CarLapCounter>());
                         car.tag = "Player";
                         playerCinemachineCamera.Follow = car.transform;
+                        powerUpDisplayUI.InjectPlayerInventory(car.GetComponent<CarPowerUpInventory>());
 
+                        var health = car.GetComponent<Health>();
+
+                        healthUI.SetTarget(health);
+                        GameManager.Instance.RegisterPlayerHealth(health);
                     }
 
                     numberOfCarsSpawned++;
@@ -69,10 +77,10 @@ public class SpawnCars : MonoBehaviour
         }
     }
 
-    public int GetNumberOfCarsSpawned() 
+    public int GetNumberOfCarsSpawned()
     {
         return numberOfCarsSpawned;
     }
-        
+
 
 }

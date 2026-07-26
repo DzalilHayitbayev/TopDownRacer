@@ -36,10 +36,10 @@ public class TopDownCarController : MonoBehaviour
         carCollider2D = GetComponentInChildren<Collider2D>();
         carSFXHandler = GetComponent<CarSFXHandler>();
     }
-
+  
     private void FixedUpdate()
     {
-        if(GameManager.Instance.GetGameState() == GameStates.countDown)
+        if (GameManager.Instance.GetGameState() == GameStates.countDown || GameManager.Instance.LastRaceResult == RaceResult.Destroyed || GameManager.Instance.LastRaceResult == RaceResult.Aborted)
             return;
 
         ApplyEngineForce();

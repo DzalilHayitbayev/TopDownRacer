@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 1
   powerUpName: Sheild
   title: Protects yo A$$
-  icon: {fileID: 582693087578622951, guid: 48632585c80423549b302c48744de2f4, type: 3}
+  icon: {fileID: 1242922385046875874, guid: 7363954ca068d4741ab8b7f0830e5e96, type: 3}
   price: 1
   duration: 5
   ammo: 3

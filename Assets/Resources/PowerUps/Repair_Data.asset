@@ -15,9 +15,9 @@ MonoBehaviour:
   type: 2
   powerUpName: Repair
   title: Need a Fix?
-  icon: {fileID: 582693087578622951, guid: 48632585c80423549b302c48744de2f4, type: 3}
+  icon: {fileID: 21300000, guid: 8eae9b570f1669645b57010213c6d893, type: 3}
   price: 1
   duration: 5
   ammo: 3
-  value: 50
-  prefab: {fileID: 0}
+  value: 100
+  prefab: {fileID: 1206498299807332555, guid: af6c1e3f046eecd4d81330aeb285600f, type: 3}
