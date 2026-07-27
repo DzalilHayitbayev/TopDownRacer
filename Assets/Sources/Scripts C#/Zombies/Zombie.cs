@@ -8,13 +8,13 @@ public class Zombie : MonoBehaviour
     [SerializeField] private float moveSpeed = 2.5f;
     [SerializeField] private int attackDamage = 10;
     [SerializeField] private float attackCooldown = 1.0f;
-    [SerializeField] private float attackRange = 2.0f; // Дистанция для начала атаки
+    [SerializeField] private float attackRange = 2.0f;
     [SerializeField] private float detectionRadius = 50f;
     [SerializeField] private float targetSearchInterval = 0.5f;
 
     [Header("Attack Point (AoE)")]
-    [SerializeField] private Transform attackPoint;        // Точка, где происходит удар (дочерний Transform)
-    [SerializeField] private float attackAreaRadius = 1.0f; // Радиус нанесения урона вокруг attackPoint
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private float attackAreaRadius = 1.0f;
 
     [Header("Impact Settings (Crushing)")]
     [SerializeField] private bool isHeavyZombie = false;
@@ -42,6 +42,11 @@ public class Zombie : MonoBehaviour
     private float lastSearchTime;
     private bool isMoving;
     private bool isDying = false;
+
+    // Static Buffers for Physics Queries (Zero Garbage Allocation)
+    private static readonly Collider2D[] SeparationBuffer = new Collider2D[16];
+    private static readonly Collider2D[] TargetBuffer = new Collider2D[16];
+    private static readonly Collider2D[] AttackBuffer = new Collider2D[16];
 
     private static readonly int IsMovingHash = Animator.StringToHash("IsMoving");
     private static readonly int AttackHash = Animator.StringToHash("Attack");
@@ -103,24 +108,35 @@ public class Zombie : MonoBehaviour
 
         if (currentTargetVehicle == null)
         {
-            isMoving = false;
+            SetMovingState(false);
             return;
         }
 
-        float distanceToTarget = Vector2.Distance(transform.position, currentTargetVehicle.position);
+        // Optimization: Use sqrMagnitude to avoid expensive square root calculation
+        float sqrDistanceToTarget = (currentTargetVehicle.position - transform.position).sqrMagnitude;
+        float sqrAttackRange = attackRange * attackRange;
 
-        if (distanceToTarget > attackRange)
+        if (sqrDistanceToTarget > sqrAttackRange)
         {
-            isMoving = true;
+            SetMovingState(true);
         }
         else
         {
-            isMoving = false;
+            SetMovingState(false);
 
             if (Time.time >= lastAttackTime + attackCooldown)
             {
                 AttackCurrentTarget();
             }
+        }
+    }
+
+    private void SetMovingState(bool moving)
+    {
+        isMoving = moving;
+        if (animator != null)
+        {
+            animator.SetBool(IsMovingHash, isMoving);
         }
     }
 
@@ -151,19 +167,25 @@ public class Zombie : MonoBehaviour
     {
         LayerMask maskToUse = zombieLayer.value != 0 ? zombieLayer : (LayerMask)(1 << gameObject.layer);
 
-        Collider2D[] nearbyZombies = Physics2D.OverlapCircleAll(rb2d.position, separationRadius, maskToUse);
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.SetLayerMask(maskToUse);
+        filter.useLayerMask = true;
+
+        int hitCount = Physics2D.OverlapCircle(rb2d.position, separationRadius, filter, SeparationBuffer);
         Vector2 separationForce = Vector2.zero;
         int neighborCount = 0;
 
-        foreach (var col in nearbyZombies)
+        for (int i = 0; i < hitCount; i++)
         {
-            if (col.gameObject == gameObject || col.transform.IsChildOf(transform)) continue;
+            var col = SeparationBuffer[i];
+            if (col == null || col.gameObject == gameObject || col.transform.IsChildOf(transform)) continue;
 
             Vector2 pushAwayVector = rb2d.position - (Vector2)col.transform.position;
-            float distance = pushAwayVector.magnitude;
+            float sqrDistance = pushAwayVector.sqrMagnitude;
 
-            if (distance > 0.001f)
+            if (sqrDistance > 0.000001f)
             {
+                float distance = Mathf.Sqrt(sqrDistance);
                 separationForce += pushAwayVector.normalized / distance;
                 neighborCount++;
             }
@@ -179,31 +201,38 @@ public class Zombie : MonoBehaviour
 
     private void FindNearestVehicle()
     {
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius, vehicleLayer);
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.SetLayerMask(vehicleLayer);
+        filter.useLayerMask = true;
 
-        if (hitColliders.Length == 0)
+        int hitCount = Physics2D.OverlapCircle(transform.position, detectionRadius, filter, TargetBuffer);
+
+        if (hitCount == 0)
         {
             currentTargetVehicle = null;
             targetDamageable = null;
             return;
         }
 
-        float minDistance = float.MaxValue;
+        float minSqrDistance = float.MaxValue;
         Transform nearestTransform = null;
         IDamageable nearestDamageable = null;
 
-        foreach (var col in hitColliders)
+        for (int i = 0; i < hitCount; i++)
         {
+            var col = TargetBuffer[i];
+            if (col == null) continue;
+
             IDamageable damTarget = col.GetComponentInParent<IDamageable>();
 
             if (damTarget != null && damTarget.IsAlive)
             {
                 Transform targetTransform = col.transform.root;
-                float dist = Vector2.Distance(transform.position, targetTransform.position);
+                float sqrDist = (transform.position - targetTransform.position).sqrMagnitude;
 
-                if (dist < minDistance)
+                if (sqrDist < minSqrDistance)
                 {
-                    minDistance = dist;
+                    minSqrDistance = sqrDist;
                     nearestTransform = targetTransform;
                     nearestDamageable = damTarget;
                 }
@@ -220,14 +249,19 @@ public class Zombie : MonoBehaviour
 
         if (animator != null) animator.SetTrigger(AttackHash);
 
-        // Используем attackPoint, если он назначен, иначе бьем перед собой/из центра
         Vector2 pointToCheck = attackPoint != null ? (Vector2)attackPoint.position : (Vector2)transform.position;
 
-        // Находим все объекты в Layer 'vehicleLayer' вокруг точки атаки
-        Collider2D[] hitObjects = Physics2D.OverlapCircleAll(pointToCheck, attackAreaRadius, vehicleLayer);
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.SetLayerMask(vehicleLayer);
+        filter.useLayerMask = true;
 
-        foreach (var col in hitObjects)
+        int hitCount = Physics2D.OverlapCircle(pointToCheck, attackAreaRadius, filter, AttackBuffer);
+
+        for (int i = 0; i < hitCount; i++)
         {
+            var col = AttackBuffer[i];
+            if (col == null) continue;
+
             IDamageable damageable = col.GetComponentInParent<IDamageable>();
             if (damageable != null && damageable.IsAlive)
             {
@@ -286,7 +320,7 @@ public class Zombie : MonoBehaviour
     {
         if (isDying) return;
         isDying = true;
-        isMoving = false;
+        SetMovingState(false);
 
         if (animator != null) animator.SetTrigger(DieHash);
 
@@ -295,11 +329,13 @@ public class Zombie : MonoBehaviour
             zombieCollider.isTrigger = true;
         }
 
+        Vector2 pushDirection = Vector2.zero;
+
         if (health != null && health.LastAttacker != null)
         {
             if (health.LastAttacker.TryGetComponent<Rigidbody2D>(out var attackerRb))
             {
-                Vector2 pushDirection = attackerRb.linearVelocity.normalized;
+                pushDirection = attackerRb.linearVelocity.normalized;
                 rb2d.AddForce(pushDirection * deathImpulseForce, ForceMode2D.Impulse);
             }
 
@@ -326,7 +362,6 @@ public class Zombie : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
 
-        // Рисуем область урона вокруг attackPoint (синий шар)
         if (attackPoint != null)
         {
             Gizmos.color = Color.cyan;
