@@ -74,13 +74,17 @@
     <Compile Include="Assets\Sources\Scripts C#\ScriptableObjects\CarData.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Driver\DriverInfo.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\WheelParticleHandler.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\PowerUp\DefaultPowerUp\DefaultPowerUpController.cs" />
     <Compile Include="Assets\Sources\Scripts C#\AI\DrawPathHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\PowerUp\PowerUpDisplayUI.cs" />
     <Compile Include="Assets\Sources\Scripts C#\CheckPoint.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\PowerUp\DefaultPowerUp\StaminaModel.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\CarColorApplier.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\CarLapCounter.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\InGameMenuUIHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\SetLeaderboardItemInfo.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\LoadingStepByStep\Services\GameStateProvider.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\PowerUp\DefaultPowerUp\SawPowerUpModel.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\SelectCarUIHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\CameraController.cs" />
     <Compile Include="Assets\Sources\Scripts C#\AStar\AStarNode.cs" />
@@ -96,13 +100,20 @@
     <Compile Include="Assets\Sources\Scripts C#\Player\PlayerPowerUpDeck.cs" />
     <Compile Include="Assets\Sources\Scripts C#\PowerUp\PowerUpSelectionPanel.cs" />
     <Compile Include="Assets\Sources\Scripts C#\AI\CarAIHandler.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\PowerUp\DefaultPowerUp\SawBladeDamage.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\LeaderBoardUIHandler.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\LoadingStepByStep\Services\AnalyticsService.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Player\PlayerWallet.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\LoadingStepByStep\EntryPoint.cs" />
     <Compile Include="Assets\Sources\Scripts C#\GhostCar\GhostCarData.cs" />
     <Compile Include="Assets\Sources\Scripts C#\SpawnCars.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\LoadingStepByStep\Services\IAPService.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Zombies\Zombie.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\CarPowerUpInventory.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\LoadingStepByStep\LoadingStep.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\CarUIInputHandler.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\LoadingStepByStep\LoadingManager.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\UI\StaminaUI.cs" />
     <Compile Include="Assets\Sources\Scripts C#\GhostCar\GhostCarDataListItem.cs" />
     <Compile Include="Assets\Sources\Scripts C#\AI\WaypointNode.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\CountDownUIHandler.cs" />
@@ -118,6 +129,7 @@
     <Compile Include="Assets\Sources\Scripts C#\Car\CarLayerHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\HealthUI.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Car\CarSFXHandler.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\LoadingStepByStep\Services\AdsService.cs" />
     <Compile Include="Assets\Sources\Scripts C#\PowerUp\PowerUpBox.cs" />
   </ItemGroup>
   <ItemGroup>

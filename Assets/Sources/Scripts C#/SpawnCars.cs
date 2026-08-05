@@ -9,6 +9,7 @@ public class SpawnCars : MonoBehaviour
     [SerializeField] CinemachineCamera playerCinemachineCamera;
     [SerializeField] ZombieSpawner zombieSpawner;
     [SerializeField] HealthUI healthUI;
+    [SerializeField] StaminaUI staminaUI;
     int numberOfCarsSpawned = 0;
 
     void Start()
@@ -49,6 +50,7 @@ public class SpawnCars : MonoBehaviour
                     {
                         car.GetComponent<CarInputHandler>().enabled = false;
                         car.tag = "AI";
+                        car.GetComponentInChildren<DefaultPowerUpController>().enabled = false;
 
                     }
                     else
@@ -60,6 +62,9 @@ public class SpawnCars : MonoBehaviour
                         car.tag = "Player";
                         playerCinemachineCamera.Follow = car.transform;
                         powerUpDisplayUI.InjectPlayerInventory(car.GetComponent<CarPowerUpInventory>());
+
+                        var defaultPowerUpController = car.GetComponentInChildren<DefaultPowerUpController>();
+                        defaultPowerUpController.SetStaminaUI(staminaUI);
 
                         var health = car.GetComponent<Health>();
 

@@ -39,13 +39,13 @@ public class SelectCarUIHandler : MonoBehaviour
     {
         if (!selectCarCanvas.activeSelf) return; // Игнорируем ввод, если экран скрыт
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) OnPreviousCar();
-        else if (Input.GetKeyDown(KeyCode.RightArrow)) OnNextCar();
+        //if (Input.GetKeyDown(KeyCode.LeftArrow)) OnPreviousCar();
+        //else if (Input.GetKeyDown(KeyCode.RightArrow)) OnNextCar();
 
-        if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return))
-        {
-            OnMainActionButtonPressed();
-        }
+        //if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return))
+        //{
+        //    OnMainActionButtonPressed();
+        //}
     }
 
     public void OnPreviousCar()

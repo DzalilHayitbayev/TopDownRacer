@@ -1,0 +1,5705 @@
+fileFormatVersion: 2
+guid: 598421f5637ab7241a159fd03e267908
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2789255289701118589
+    second: ChatGPT Image Aug 5, 2026, 09_14_48 PM(1)_0
+  - first:
+      213: -8973966547845640290
+    second: ChatGPT Image Aug 5, 2026, 09_14_48 PM(1)_1
+  - first:
+      213: 1584329500777180419
+    second: ChatGPT Image Aug 5, 2026, 09_14_48 PM(1)_2
+  - first:
+      213: -4579102288203055335
+    second: ChatGPT Image Aug 5, 2026, 09_14_48 PM(1)_3
+  - first:
+      213: -6116245101098977817
+    second: ChatGPT Image Aug 5, 2026, 09_14_48 PM(1)_4
+  - first:
+      213: 2654301499314337912
+    second: ChatGPT Image Aug 5, 2026, 09_14_48 PM(1)_5
+  - first:
+      213: 5273119910079845918
+    second: ChatGPT Image Aug 5, 2026, 09_14_48 PM(1)_6
+  - first:
+      213: 5819477837222621221
+    second: ChatGPT Image Aug 5, 2026, 09_14_48 PM(1)_7
+  - first:
+      213: -6642047834949300303
+    second: ChatGPT Image Aug 5, 2026, 09_14_48 PM(1)_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: racetrack_tileset 3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc3c3daad728474baa2d1a6fdfc1682
+      internalID: 1040974065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26253ce18fc1b140a321b7699fcf023
+      internalID: 1944947697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974cfc6ab943ef94f9e89e7d8638b92d
+      internalID: -1138321267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a8623446b553240a17535743117a47
+      internalID: 196190649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93a3352de7669d4998ac648be3f1f60
+      internalID: -408774417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb8e2a98b30cef439376ff1b23e9bb4
+      internalID: 1019403633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e006856fd7c9d4c9ada4103e00f63a
+      internalID: 168358470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3ce87a73076274e88f1e4c263e9300
+      internalID: -119035491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258c2aef19dfbd9468c190c3c95f5dc2
+      internalID: 1708124985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d1d83daf46ff34495dca428ddeb08c
+      internalID: 618426063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2f9cbe821149b4aa82ef5b1aafdb95
+      internalID: 432533213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6351b1e38affb4942ac72f3a057f520f
+      internalID: -1033172004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a18586de8fff349b4629d53cb9d800
+      internalID: 1751304647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff70a859064de53409085e386f83eed5
+      internalID: 197089741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75f359029207a14fa9c5cbfda8a32b0
+      internalID: -307429384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 955
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfe8e09f4e6dfe49a105262a4f7d5be
+      internalID: 48971284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb0c958a3b6d4e41a355245b0fdedc4
+      internalID: 1144863032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cf58f6144bf604891fff77124fd466
+      internalID: -261305811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50fbb2c39dfcc94bb6f5497a941390f
+      internalID: -1906077601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6301e8108dbe2d4ba9f440ab0cf66f8
+      internalID: -1659245961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d4aec3d813e9c42a349996f00164f0
+      internalID: -908628271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86639c66d022d364eb447204502ed126
+      internalID: -2083272138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2029e21eb627d499047ec8e9f69c39
+      internalID: 468120041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ec4675d1d6ab845a790d17229686a6
+      internalID: -2048415667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17acd661705ee1246aa16e5ef9dc838f
+      internalID: 1326403803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_25
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e63d1e5789b7b468b9dbe6b54e787d
+      internalID: 1027195340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e03f4b7ef2fff48a0fbce42b68fe06
+      internalID: 270096357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_27
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153cd12faa7d7ee4e800eb801d41e23f
+      internalID: -2146715312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed319a42732a984b8616633caf5ad54
+      internalID: -175988588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_29
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0b7e9cf7c6eb345a424f994700051a
+      internalID: -804547845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_30
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8846278e1c81f4cbcb21002096f4b7
+      internalID: -677732992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_31
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 891
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e037d8c4a7d108b41abd0502e8aa169d
+      internalID: -395417385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2bd970342e37e42a8629db68ab1068
+      internalID: 1328383664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e3e14f12e11c748a3060024bf04da5
+      internalID: 312509627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29825b3522ef7154fba09910aabe8d98
+      internalID: -423025919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ba6a9a888347c43a64abd9b8e135d2
+      internalID: 1978682632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d95ddf0841d0142b38cb65d6ac1a32
+      internalID: -1656789252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e317a85946c364788c34815794a5b9
+      internalID: -1637733923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c53117dfc965f4ba1e4ea25a40dd18
+      internalID: -305006049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb5f99662291ae45a050755f33441e9
+      internalID: -1531467618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbec961476053145812357538620676
+      internalID: -1796086276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73acd673378acf34ca7b05051a069597
+      internalID: -1010419387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_42
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbd06b75185b9643878e90a844e861c
+      internalID: -1384105210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_43
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170023f96fb4f774381d4cac9cf0aae3
+      internalID: -890140907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4303e4802fd7e42af920f845ecabf5
+      internalID: -1348126063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_45
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc19bb5a9481a804d96f1a576cda4d40
+      internalID: -1416758123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_46
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eee124d8a1f1fc4caa2803b14c94f8f
+      internalID: 341760925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5222a7c9db35428439ed3a5441abc6a7
+      internalID: -1470698201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fefd66b9b829e4cac1b9418681672d
+      internalID: -424383015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f001afe796d8e479be70a45b17a405
+      internalID: -1054813719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d73b5c6638cde6458de0855747229be
+      internalID: 535631461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826dcdc1b036e0542b1b7227ee3a3abf
+      internalID: -1204941441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad88194cbfd38e745bbccef2c46908ce
+      internalID: -994539476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b146b22cb9d1e429abae8d9fdd8d35
+      internalID: -39987522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cffd6da718bd1448a6e4ae7c916ac4
+      internalID: 1365496718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d48f3d240b57c439b7f6ebe10f7864
+      internalID: -1330574595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777134be5971fa348a4bcc83fc6d5232
+      internalID: 214983577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_57
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140c3ab2beb4091479d61e0f4e221a64
+      internalID: 1447168321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_58
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6245600dd213d0e44949a8073575d82b
+      internalID: -2106749308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_59
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea513e147a9e1d14f8a43fdfa89c48e1
+      internalID: -202175104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_60
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bda3530678c4894982c6ba99a68ac9c
+      internalID: -76638361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_61
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6194462246c4c3d4389473ba5aef8318
+      internalID: -1524916776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_62
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92980f9d633adc54d8271aade84250a4
+      internalID: -513284276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_63
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3110a4aa394f764dbb4648bf524b6e3
+      internalID: -2119392147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceeb4cf80fb90e849b303030c570c72b
+      internalID: 1988581693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9bee34ad14f364d95ab8c55865f07c
+      internalID: 269474063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d8845345414344c839013190ca0f76
+      internalID: 809961531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173dd4084f9b45d4686495f91e1364a5
+      internalID: -1774216458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c38bd27648d1746906c0e6007af2ad
+      internalID: 1495955061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_69
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c65ea271786e8b4191bfda1ad2ff9d6
+      internalID: 801829755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfccd7ea6789ff4980ba4eb10467be3
+      internalID: 265202107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_71
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954bba844a0bf554ea353370fbfe36a1
+      internalID: -390287592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_72
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9106b36a03f3e408b0681b54bea922
+      internalID: 1544068856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_73
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2167519260ebf8948ab81bc0f851cd5d
+      internalID: 1231723723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_74
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e9a4a5bbc5f3c46a074ced243f149e
+      internalID: 1207409041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_75
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03239df62a80a9548a25c4daeadcee94
+      internalID: 1924040628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_76
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bfe266a76c39e4987196d31331254c
+      internalID: -1205699588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_77
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5c02971d0359c43b4a6d226c981031
+      internalID: -623284166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_78
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7196b8058796dd4883c6ecb78c3ad6e
+      internalID: -1150960263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_79
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 699
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568204f8153a8ec4b91a14a2ff27da42
+      internalID: 1766616528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ce2d6a5cbda814abc4f62160cb9c45
+      internalID: -1041946021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46341deb15189fe4b9a9cb776cc5a319
+      internalID: 1717996052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_82
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36a37d059f261d489695617200f8333
+      internalID: 165309249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_83
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a89ed27261d89c408054601a5f093d0
+      internalID: -1159587679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_84
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660b635cda7df9c4aa266027c4630a07
+      internalID: -90123547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_85
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc083247d0c25e349bfaaec7daafe00d
+      internalID: -1813853319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_86
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03f28eb32bf9a841a5603085ad27f7f
+      internalID: -402505521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_87
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fff5f8aea4f534babec06ac6f5f616
+      internalID: 884404925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_88
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c5d3c5be280604dbb5fc2b41b76973
+      internalID: -860408485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_89
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc24a264733dab41a05da7cd5924fc5
+      internalID: 264599351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_90
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8b77118b61d0e49a907c0fe89ca0d0
+      internalID: 1884918176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_91
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227453dd787aa47489dc1e9ece507bae
+      internalID: 357791073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_92
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3510ab1de74183a4a8440b02572139fd
+      internalID: -1675121722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_93
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec1259e6d2a13640949593bfbd52559
+      internalID: -919965699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_94
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4a60e2a4dff4e40b921c5d4337bfa5
+      internalID: 2103199940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_95
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 635
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deac6df560d9ec34faef18c06e579ab4
+      internalID: 67737498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4b5c9be708560468b0e1dbae558160
+      internalID: 210195521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae547ed5b78d0246a34da33f636a799
+      internalID: 1974680996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d2824b2a724ae41863ffba7277307a
+      internalID: -1551864526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94abf512b1326da4e815b0a0d01803d0
+      internalID: -541708811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c5512d786e0c246ba22d8269e531eb
+      internalID: 1380830369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf57a9d9eb09fa842b13cf8414154390
+      internalID: 2086834802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6e79f55d4e3de4db3b409c22587527
+      internalID: -972069450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_103
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5548d654555a614ab6d0c518dc32166
+      internalID: 1061393506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_104
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897f56e44fe66124a8d2a303da78fc44
+      internalID: -1113652493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_105
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25b0484ae5b1e24697bb7f1d4e80664
+      internalID: -2047119770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_106
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8950f6e7573114682327050a2cd61d
+      internalID: 881046177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_107
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02644bbb566904428a6b6040278269c
+      internalID: 1003320805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_108
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd2718b108c32e41b43022dc68fdb46
+      internalID: -1869820514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_109
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39aebe096a3d6f4a876228de4cfcfa4
+      internalID: -2065900298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_110
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5bbc3bba6f6cc4490b9ac2d5cd99a7
+      internalID: -689712946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_111
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 571
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014cdd111a62fe6429e3dfd2cbafed61
+      internalID: 249776351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085f2f35e58965144910d5b0a54ffbdd
+      internalID: 1196016624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_113
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c8a1b09d3b3de4b9ee8c33d646037e
+      internalID: -1089176055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_114
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e665b55f24d9d0547b6b9c5cae067c10
+      internalID: -325110339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_115
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73be0092c4fc92844a6ad173f3fe7104
+      internalID: -1501816628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_116
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bede131ed9c24408270b3a36fa238d
+      internalID: -789682890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_117
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b64f9aaf4c471418744f565c37ce09
+      internalID: -1962466260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_118
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca59951cf14466a429a7073be8c3d1cf
+      internalID: 118786143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_119
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006c1367947502a48ba086a418eae0bb
+      internalID: -247101400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_120
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4de6a4d2448ea44b8939a09d02a8b0a
+      internalID: -1688157181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_121
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fe23e5922d4994aa3dfbf27934bfab
+      internalID: -964765991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_122
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047aa646b8239664d808acf1644830ed
+      internalID: -7757796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_123
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5655f02d3d8956f42821dc09e0e0fc82
+      internalID: -786823002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_124
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c069ab8b7adc8e14488c7a53a2b923b1
+      internalID: 927320597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_125
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2c6e6c7bf910d4da9dbb43b4431aa4
+      internalID: 1901146872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_126
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdf59028c8fba341a4b83781bef0081
+      internalID: 1561675515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_127
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 507
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3145757a711da174e88791cf71b37092
+      internalID: -187740799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5010fb0c0e7b3458d55218e0b22b48
+      internalID: -1193434534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_129
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde455d0b3368fe42abc38b248d70563
+      internalID: -747148196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_130
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e78a8c2f372ab04db9d2658cfb6d330
+      internalID: 742691927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_131
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eea6a5b561fa074d807559f38cf771b
+      internalID: -879389786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_132
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046623ae05e8b4246b4eb037e3089e03
+      internalID: -1004265200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_133
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc963db314da774cb11fac130aa06ec
+      internalID: -1586282395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_134
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafc7ff94d2c1a146a4219c55c200bcf
+      internalID: 1882452947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_135
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12a6ea9619c0e14696bd9b6c4d3921d
+      internalID: 220629302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_136
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69755c1ba4edab48b00ac84def8f88b
+      internalID: -49407036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_137
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b007205ca0c15b34b9759ed88c9433cd
+      internalID: 615317338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_138
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83e0c8da62a7d545ad8332f35543bc5
+      internalID: -1681551197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_139
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca5750f06d1b4340b901298dc312c9d
+      internalID: 623426554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_140
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048c10999cbfc78428f37d0a9b91ca75
+      internalID: 1951229874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_141
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea79074d0b500d041a0aae6fd463f835
+      internalID: -2117058930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_142
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67404e5c168a9e448f9349ccfb50439
+      internalID: 1761137202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_143
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 443
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd747b303ac7d948994b4afa68fb947
+      internalID: 92694872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98ca3205682f8f4d8cc678caab78bdf
+      internalID: 1686763645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_145
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b22cdd9a14567478eb514da634b9f8
+      internalID: -2023893710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_146
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82ae160f5a6494409a0036577977803
+      internalID: -1096780169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_147
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdcde9a9df3d0d44ac22f303ea1e307
+      internalID: -1247439071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_148
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62cca89712705b46869889d20c9c7d8
+      internalID: 156728708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_149
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682a9c932906d2144a272ab2748bc326
+      internalID: 350212399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_150
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba16232120922141ba856ce34716d0b
+      internalID: 488662087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_151
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdddfc03c269de48aa4c9f071c973fa
+      internalID: -1791570453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_152
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8634a03b19545be4a8fe681e141e0423
+      internalID: 185537538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_153
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e78141b9f77e7a48b58caf36735b9c8
+      internalID: 402753858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_154
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1078ed7efebecaf44bbd213c9eb55289
+      internalID: 70321695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_155
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55db4f1ee99e6f34d8f30a4c91d63504
+      internalID: -1109150545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_156
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c4779599c176b488babf1da2aa71c0
+      internalID: 1603450168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_157
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72261c9978b097f45ba975e5befd364c
+      internalID: -1378999474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_158
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8102268f8d54bb343a640783aa417e49
+      internalID: 2001253325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_159
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 379
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26284142d75d3084b87438211be13fae
+      internalID: -1733369311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac49efa6e7d5eda4090ed7ed3bb3270c
+      internalID: -400879265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_161
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32c15d766f643b48a6ab06001950bb5
+      internalID: -1819684043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_162
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b5cd7f4ff0da746bb7bbb9839009f2
+      internalID: 1357228488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_163
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838eac379617dca4d9379e8465cc6ed8
+      internalID: -560192202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_164
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232f349444a370f46bccbe7623312ba4
+      internalID: -818049294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_165
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca892b2053feb684da3bfda949d7d93c
+      internalID: 1471535468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_166
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e74a1b263ccbee46a0c39e31208a9e0
+      internalID: 1422901260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_167
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf458f5a354aff4d9ce0400c651c4b0
+      internalID: -1128394598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_168
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90323fcd9474cc54a8f738eb6ae18997
+      internalID: -474794776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_169
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d75ddc93baecc248805fcb949de034b
+      internalID: -1114253276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_170
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f610599de7fc2459a41d731146cea4
+      internalID: -1567059590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_171
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54991ba7f7c8d943b2d83786bf8ed11
+      internalID: -632390592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_172
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa35398fc6d64749af78c2b43608219
+      internalID: -459190039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_173
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23b58c0b6b9a16429755c5768790ca3
+      internalID: 2085818147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_174
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca03949d237a614997b03cc4899d4de
+      internalID: 2051123075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_175
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0294369b5f0de4381266dba79d0713
+      internalID: -134427239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2359dccf17f91e7458ccc709254f76e4
+      internalID: 1013404192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_177
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04afbc6769026c8448fbf0624c850f9c
+      internalID: 468560470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_178
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cc290f9f1a2b04e9bccf9c7d3d1649
+      internalID: -109010785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_179
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a959428727303e4409223a6fe102b15b
+      internalID: -99967250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_180
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ca0fe7ec715d5408fdcf3446a08ac0
+      internalID: -1679372950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_181
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cce25f07d539cd478b47b37bab25f8f
+      internalID: -1559118734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_182
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0ceda4d4f678c43a1cb0c12b5365a9
+      internalID: -1044086114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_183
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f564354ac38fba743a0408fa049457b2
+      internalID: -1086240064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_184
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a90c831d862d1544bd4a64d9040fbd0
+      internalID: 1524622456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_185
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f70fdaf14c6a4542ba75272ba1f8ab0
+      internalID: 505126427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_186
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b4c227a36c1904abc7e23ad2588483
+      internalID: -358479029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_187
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c98ef3ff703d2c41889910b53ebb28a
+      internalID: -1453655900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_188
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c64160d5272b64bb218402225fc677
+      internalID: 886829822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_189
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445b37c5e1854d54bb81bf43490f6eed
+      internalID: -1529606639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_190
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407d36e596ac3504bb2b4ab7a1088028
+      internalID: -940776832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_191
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 251
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39740506adedf5c43b05ad40946ffc24
+      internalID: -368928645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3df549ec3b14a7489e7a0c525cdd54d
+      internalID: -718937865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_193
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436ec560e75cf4645ba9cd05b6925afb
+      internalID: 778664080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_194
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b50b398252bdda44b75591a8ec718b5
+      internalID: 592659797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_195
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a851ac49b1ff049887958b554119d0
+      internalID: 277023579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_196
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8eac729ed247448a9f73bfcd868b14
+      internalID: -827062238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_197
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033cb709f84eb5447a883761735d24be
+      internalID: -294069773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_198
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee743151bdf1a146b6d1edae7840843
+      internalID: 687160841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_199
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c14f7864708ca45894847a59455bf6
+      internalID: 991910063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_200
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64b1102cdaf3674390aba7d7397d9d1
+      internalID: -1620564755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_201
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedbbee3855e88e4aaf9635920062ab1
+      internalID: 1286126564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_202
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6651e10ac9ed1614dade1356001293ab
+      internalID: -1187631109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_203
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d24320026eb8d4283314684d1eff4e
+      internalID: 1781728501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_204
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17eacfd9ac1cdc4c83a7b95763c4e60
+      internalID: 1054505645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_205
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4efc9ecf97dd64d864ef4b9e01bf4a
+      internalID: 1606034395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_206
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3240b76b940f5449347bc737acb099
+      internalID: -1351157696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_207
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abbecb4335d9dc4284bbe5145004a75
+      internalID: 1376538336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cf72486870a6d4b91f0e47f4b7448c
+      internalID: 1892930878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_209
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bb7008a536b3c4893603b66eef7912
+      internalID: 1798346887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_210
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60948c335f448f54bb7c96a50c38e51f
+      internalID: -1184797004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_211
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f47298ba2c949408d01bc83ea2d491
+      internalID: -760457746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_212
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1daac8ad501ccb94aaca90cfc9359ad4
+      internalID: -1245368842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_213
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074b17071d2eced45a757d3030e0c9c7
+      internalID: -1398217173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_214
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3286c5702b728449a5717ed7010f04
+      internalID: -317512428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_215
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299b54badee9e174a963ed33bde7c014
+      internalID: -1610680938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_216
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3621f6146d97ac4bbd0e965ca7831bf
+      internalID: -62889514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_217
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b4d75304a63d54aa28f032609d9440
+      internalID: 1968494064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_218
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c834215290141948bd8c0fe492f39a2
+      internalID: -370017549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_219
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91011f86607586e449716c9662d546ee
+      internalID: 569018865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_220
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a11fe32621a324d8d357ad7629fefb
+      internalID: 996981889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_221
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a26fc37955469f45a358ddf52951c72
+      internalID: -342310040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_222
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692b7d798432b55408587e8f0954b213
+      internalID: -1786945706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_223
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 123
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74259e2d6a44c294cb27310da9269c72
+      internalID: -933682053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e38a7d4315b0147a0ca3c3652b2cc0
+      internalID: 1060425165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_225
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410003a2c0b95414a8270435bb7191bc
+      internalID: 87523265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_226
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603b2128737aba849a4dba7ae49d8224
+      internalID: 651343314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_227
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480162676faa2e44b9bcb738f501d0a6
+      internalID: 539287058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_228
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5610095640191d649b1cc9167ab1623e
+      internalID: -1287111201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_229
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966d6a51869f4e14d90d6dcaa9432f1a
+      internalID: 1939810862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_230
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09af07385d9c22a429d43e402a525274
+      internalID: -1398574187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_231
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c3f46e234237c4b953980a0a404d10
+      internalID: -697844931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_232
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b1fca9b9488f3459c3f97e63746441
+      internalID: 526046400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_233
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019cf8a0d335c5d47afe9abe960ca72c
+      internalID: 480434495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_234
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f68574b2b223948b33cf2cc1e92434
+      internalID: 2142453040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_235
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d81e1185331ca47abe9e5d84838932
+      internalID: 1950469610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_236
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35c6f5fcfb344d4aa171cf2e38bd459
+      internalID: -1190146645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_237
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa26e6bda3466c948831522b0ad8062f
+      internalID: 2046906576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_238
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a12bfc2def6534b819e7bb92f213d3
+      internalID: -16585618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: racetrack_tileset 3_239
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 59
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3407e5923f88e674facc0b3ff19a03da
+      internalID: -1637038544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c0d843420341f7c46929f6ffa073f770
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":5.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      racetrack_tileset 3_0: 1040974065
+      racetrack_tileset 3_1: 1944947697
+      racetrack_tileset 3_10: 432533213
+      racetrack_tileset 3_100: 1380830369
+      racetrack_tileset 3_101: 2086834802
+      racetrack_tileset 3_102: -972069450
+      racetrack_tileset 3_103: 1061393506
+      racetrack_tileset 3_104: -1113652493
+      racetrack_tileset 3_105: -2047119770
+      racetrack_tileset 3_106: 881046177
+      racetrack_tileset 3_107: 1003320805
+      racetrack_tileset 3_108: -1869820514
+      racetrack_tileset 3_109: -2065900298
+      racetrack_tileset 3_11: -1033172004
+      racetrack_tileset 3_110: -689712946
+      racetrack_tileset 3_111: 249776351
+      racetrack_tileset 3_112: 1196016624
+      racetrack_tileset 3_113: -1089176055
+      racetrack_tileset 3_114: -325110339
+      racetrack_tileset 3_115: -1501816628
+      racetrack_tileset 3_116: -789682890
+      racetrack_tileset 3_117: -1962466260
+      racetrack_tileset 3_118: 118786143
+      racetrack_tileset 3_119: -247101400
+      racetrack_tileset 3_12: 1751304647
+      racetrack_tileset 3_120: -1688157181
+      racetrack_tileset 3_121: -964765991
+      racetrack_tileset 3_122: -7757796
+      racetrack_tileset 3_123: -786823002
+      racetrack_tileset 3_124: 927320597
+      racetrack_tileset 3_125: 1901146872
+      racetrack_tileset 3_126: 1561675515
+      racetrack_tileset 3_127: -187740799
+      racetrack_tileset 3_128: -1193434534
+      racetrack_tileset 3_129: -747148196
+      racetrack_tileset 3_13: 197089741
+      racetrack_tileset 3_130: 742691927
+      racetrack_tileset 3_131: -879389786
+      racetrack_tileset 3_132: -1004265200
+      racetrack_tileset 3_133: -1586282395
+      racetrack_tileset 3_134: 1882452947
+      racetrack_tileset 3_135: 220629302
+      racetrack_tileset 3_136: -49407036
+      racetrack_tileset 3_137: 615317338
+      racetrack_tileset 3_138: -1681551197
+      racetrack_tileset 3_139: 623426554
+      racetrack_tileset 3_14: -307429384
+      racetrack_tileset 3_140: 1951229874
+      racetrack_tileset 3_141: -2117058930
+      racetrack_tileset 3_142: 1761137202
+      racetrack_tileset 3_143: 92694872
+      racetrack_tileset 3_144: 1686763645
+      racetrack_tileset 3_145: -2023893710
+      racetrack_tileset 3_146: -1096780169
+      racetrack_tileset 3_147: -1247439071
+      racetrack_tileset 3_148: 156728708
+      racetrack_tileset 3_149: 350212399
+      racetrack_tileset 3_15: 48971284
+      racetrack_tileset 3_150: 488662087
+      racetrack_tileset 3_151: -1791570453
+      racetrack_tileset 3_152: 185537538
+      racetrack_tileset 3_153: 402753858
+      racetrack_tileset 3_154: 70321695
+      racetrack_tileset 3_155: -1109150545
+      racetrack_tileset 3_156: 1603450168
+      racetrack_tileset 3_157: -1378999474
+      racetrack_tileset 3_158: 2001253325
+      racetrack_tileset 3_159: -1733369311
+      racetrack_tileset 3_16: 1144863032
+      racetrack_tileset 3_160: -400879265
+      racetrack_tileset 3_161: -1819684043
+      racetrack_tileset 3_162: 1357228488
+      racetrack_tileset 3_163: -560192202
+      racetrack_tileset 3_164: -818049294
+      racetrack_tileset 3_165: 1471535468
+      racetrack_tileset 3_166: 1422901260
+      racetrack_tileset 3_167: -1128394598
+      racetrack_tileset 3_168: -474794776
+      racetrack_tileset 3_169: -1114253276
+      racetrack_tileset 3_17: -261305811
+      racetrack_tileset 3_170: -1567059590
+      racetrack_tileset 3_171: -632390592
+      racetrack_tileset 3_172: -459190039
+      racetrack_tileset 3_173: 2085818147
+      racetrack_tileset 3_174: 2051123075
+      racetrack_tileset 3_175: -134427239
+      racetrack_tileset 3_176: 1013404192
+      racetrack_tileset 3_177: 468560470
+      racetrack_tileset 3_178: -109010785
+      racetrack_tileset 3_179: -99967250
+      racetrack_tileset 3_18: -1906077601
+      racetrack_tileset 3_180: -1679372950
+      racetrack_tileset 3_181: -1559118734
+      racetrack_tileset 3_182: -1044086114
+      racetrack_tileset 3_183: -1086240064
+      racetrack_tileset 3_184: 1524622456
+      racetrack_tileset 3_185: 505126427
+      racetrack_tileset 3_186: -358479029
+      racetrack_tileset 3_187: -1453655900
+      racetrack_tileset 3_188: 886829822
+      racetrack_tileset 3_189: -1529606639
+      racetrack_tileset 3_19: -1659245961
+      racetrack_tileset 3_190: -940776832
+      racetrack_tileset 3_191: -368928645
+      racetrack_tileset 3_192: -718937865
+      racetrack_tileset 3_193: 778664080
+      racetrack_tileset 3_194: 592659797
+      racetrack_tileset 3_195: 277023579
+      racetrack_tileset 3_196: -827062238
+      racetrack_tileset 3_197: -294069773
+      racetrack_tileset 3_198: 687160841
+      racetrack_tileset 3_199: 991910063
+      racetrack_tileset 3_2: -1138321267
+      racetrack_tileset 3_20: -908628271
+      racetrack_tileset 3_200: -1620564755
+      racetrack_tileset 3_201: 1286126564
+      racetrack_tileset 3_202: -1187631109
+      racetrack_tileset 3_203: 1781728501
+      racetrack_tileset 3_204: 1054505645
+      racetrack_tileset 3_205: 1606034395
+      racetrack_tileset 3_206: -1351157696
+      racetrack_tileset 3_207: 1376538336
+      racetrack_tileset 3_208: 1892930878
+      racetrack_tileset 3_209: 1798346887
+      racetrack_tileset 3_21: -2083272138
+      racetrack_tileset 3_210: -1184797004
+      racetrack_tileset 3_211: -760457746
+      racetrack_tileset 3_212: -1245368842
+      racetrack_tileset 3_213: -1398217173
+      racetrack_tileset 3_214: -317512428
+      racetrack_tileset 3_215: -1610680938
+      racetrack_tileset 3_216: -62889514
+      racetrack_tileset 3_217: 1968494064
+      racetrack_tileset 3_218: -370017549
+      racetrack_tileset 3_219: 569018865
+      racetrack_tileset 3_22: 468120041
+      racetrack_tileset 3_220: 996981889
+      racetrack_tileset 3_221: -342310040
+      racetrack_tileset 3_222: -1786945706
+      racetrack_tileset 3_223: -933682053
+      racetrack_tileset 3_224: 1060425165
+      racetrack_tileset 3_225: 87523265
+      racetrack_tileset 3_226: 651343314
+      racetrack_tileset 3_227: 539287058
+      racetrack_tileset 3_228: -1287111201
+      racetrack_tileset 3_229: 1939810862
+      racetrack_tileset 3_23: -2048415667
+      racetrack_tileset 3_230: -1398574187
+      racetrack_tileset 3_231: -697844931
+      racetrack_tileset 3_232: 526046400
+      racetrack_tileset 3_233: 480434495
+      racetrack_tileset 3_234: 2142453040
+      racetrack_tileset 3_235: 1950469610
+      racetrack_tileset 3_236: -1190146645
+      racetrack_tileset 3_237: 2046906576
+      racetrack_tileset 3_238: -16585618
+      racetrack_tileset 3_239: -1637038544
+      racetrack_tileset 3_24: 1326403803
+      racetrack_tileset 3_25: 1027195340
+      racetrack_tileset 3_26: 270096357
+      racetrack_tileset 3_27: -2146715312
+      racetrack_tileset 3_28: -175988588
+      racetrack_tileset 3_29: -804547845
+      racetrack_tileset 3_3: 196190649
+      racetrack_tileset 3_30: -677732992
+      racetrack_tileset 3_31: -395417385
+      racetrack_tileset 3_32: 1328383664
+      racetrack_tileset 3_33: 312509627
+      racetrack_tileset 3_34: -423025919
+      racetrack_tileset 3_35: 1978682632
+      racetrack_tileset 3_36: -1656789252
+      racetrack_tileset 3_37: -1637733923
+      racetrack_tileset 3_38: -305006049
+      racetrack_tileset 3_39: -1531467618
+      racetrack_tileset 3_4: -408774417
+      racetrack_tileset 3_40: -1796086276
+      racetrack_tileset 3_41: -1010419387
+      racetrack_tileset 3_42: -1384105210
+      racetrack_tileset 3_43: -890140907
+      racetrack_tileset 3_44: -1348126063
+      racetrack_tileset 3_45: -1416758123
+      racetrack_tileset 3_46: 341760925
+      racetrack_tileset 3_47: -1470698201
+      racetrack_tileset 3_48: -424383015
+      racetrack_tileset 3_49: -1054813719
+      racetrack_tileset 3_5: 1019403633
+      racetrack_tileset 3_50: 535631461
+      racetrack_tileset 3_51: -1204941441
+      racetrack_tileset 3_52: -994539476
+      racetrack_tileset 3_53: -39987522
+      racetrack_tileset 3_54: 1365496718
+      racetrack_tileset 3_55: -1330574595
+      racetrack_tileset 3_56: 214983577
+      racetrack_tileset 3_57: 1447168321
+      racetrack_tileset 3_58: -2106749308
+      racetrack_tileset 3_59: -202175104
+      racetrack_tileset 3_6: 168358470
+      racetrack_tileset 3_60: -76638361
+      racetrack_tileset 3_61: -1524916776
+      racetrack_tileset 3_62: -513284276
+      racetrack_tileset 3_63: -2119392147
+      racetrack_tileset 3_64: 1988581693
+      racetrack_tileset 3_65: 269474063
+      racetrack_tileset 3_66: 809961531
+      racetrack_tileset 3_67: -1774216458
+      racetrack_tileset 3_68: 1495955061
+      racetrack_tileset 3_69: 801829755
+      racetrack_tileset 3_7: -119035491
+      racetrack_tileset 3_70: 265202107
+      racetrack_tileset 3_71: -390287592
+      racetrack_tileset 3_72: 1544068856
+      racetrack_tileset 3_73: 1231723723
+      racetrack_tileset 3_74: 1207409041
+      racetrack_tileset 3_75: 1924040628
+      racetrack_tileset 3_76: -1205699588
+      racetrack_tileset 3_77: -623284166
+      racetrack_tileset 3_78: -1150960263
+      racetrack_tileset 3_79: 1766616528
+      racetrack_tileset 3_8: 1708124985
+      racetrack_tileset 3_80: -1041946021
+      racetrack_tileset 3_81: 1717996052
+      racetrack_tileset 3_82: 165309249
+      racetrack_tileset 3_83: -1159587679
+      racetrack_tileset 3_84: -90123547
+      racetrack_tileset 3_85: -1813853319
+      racetrack_tileset 3_86: -402505521
+      racetrack_tileset 3_87: 884404925
+      racetrack_tileset 3_88: -860408485
+      racetrack_tileset 3_89: 264599351
+      racetrack_tileset 3_9: 618426063
+      racetrack_tileset 3_90: 1884918176
+      racetrack_tileset 3_91: 357791073
+      racetrack_tileset 3_92: -1675121722
+      racetrack_tileset 3_93: -919965699
+      racetrack_tileset 3_94: 2103199940
+      racetrack_tileset 3_95: 67737498
+      racetrack_tileset 3_96: 210195521
+      racetrack_tileset 3_97: 1974680996
+      racetrack_tileset 3_98: -1551864526
+      racetrack_tileset 3_99: -541708811
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

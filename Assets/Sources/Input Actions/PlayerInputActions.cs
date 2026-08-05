@@ -136,6 +136,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UseDefaultPowerUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""4eaa06d4-55a2-4e6f-b013-0304e48f4914"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -369,6 +378,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""UsePowerUp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""21cfbb1b-7633-4519-b30f-8cf2dc4eae54"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UseDefaultPowerUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -382,6 +402,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_Move3 = m_Player.FindAction("Move3", throwIfNotFound: true);
         m_Player_Move4 = m_Player.FindAction("Move4", throwIfNotFound: true);
         m_Player_UsePowerUp = m_Player.FindAction("UsePowerUp", throwIfNotFound: true);
+        m_Player_UseDefaultPowerUp = m_Player.FindAction("UseDefaultPowerUp", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -467,6 +488,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Move3;
     private readonly InputAction m_Player_Move4;
     private readonly InputAction m_Player_UsePowerUp;
+    private readonly InputAction m_Player_UseDefaultPowerUp;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -498,6 +520,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/UsePowerUp".
         /// </summary>
         public InputAction @UsePowerUp => m_Wrapper.m_Player_UsePowerUp;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/UseDefaultPowerUp".
+        /// </summary>
+        public InputAction @UseDefaultPowerUp => m_Wrapper.m_Player_UseDefaultPowerUp;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -539,6 +565,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @UsePowerUp.started += instance.OnUsePowerUp;
             @UsePowerUp.performed += instance.OnUsePowerUp;
             @UsePowerUp.canceled += instance.OnUsePowerUp;
+            @UseDefaultPowerUp.started += instance.OnUseDefaultPowerUp;
+            @UseDefaultPowerUp.performed += instance.OnUseDefaultPowerUp;
+            @UseDefaultPowerUp.canceled += instance.OnUseDefaultPowerUp;
         }
 
         /// <summary>
@@ -565,6 +594,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @UsePowerUp.started -= instance.OnUsePowerUp;
             @UsePowerUp.performed -= instance.OnUsePowerUp;
             @UsePowerUp.canceled -= instance.OnUsePowerUp;
+            @UseDefaultPowerUp.started -= instance.OnUseDefaultPowerUp;
+            @UseDefaultPowerUp.performed -= instance.OnUseDefaultPowerUp;
+            @UseDefaultPowerUp.canceled -= instance.OnUseDefaultPowerUp;
         }
 
         /// <summary>
@@ -640,5 +672,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnUsePowerUp(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UseDefaultPowerUp" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUseDefaultPowerUp(InputAction.CallbackContext context);
     }
 }

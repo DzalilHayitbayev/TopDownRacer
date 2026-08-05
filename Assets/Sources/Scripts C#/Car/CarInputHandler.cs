@@ -10,12 +10,14 @@ public class CarInputHandler : MonoBehaviour
 
     private TopDownCarController topDownCarController;
     private CarPowerUpInventory powerUpInventory;
+    private DefaultPowerUpController defaultPowerUpController;
     private PlayerInputActions playerInputActions;
 
     private void Awake()
     {
         topDownCarController = GetComponent<TopDownCarController>();
         powerUpInventory = GetComponent<CarPowerUpInventory>();
+        defaultPowerUpController = GetComponentInChildren<DefaultPowerUpController>();
 
         playerInputActions = new PlayerInputActions();
     }
@@ -24,13 +26,17 @@ public class CarInputHandler : MonoBehaviour
     {
         playerInputActions.Player.Enable();
 
-        // Подписываемся на нажатие кнопки активации PowerUp
+        // Подписываемся на .started (момент физического нажатия) и .canceled (отпускание)
+        playerInputActions.Player.UseDefaultPowerUp.started += OnDefaultPowerUpStarted;
+        playerInputActions.Player.UseDefaultPowerUp.canceled += OnDefaultPowerUpCanceled;
+
         playerInputActions.Player.UsePowerUp.performed += OnUsePowerUpPerformed;
     }
 
     private void OnDisable()
     {
-        // Отписываемся, чтобы избежать утечек памяти
+        playerInputActions.Player.UseDefaultPowerUp.started -= OnDefaultPowerUpStarted;
+        playerInputActions.Player.UseDefaultPowerUp.canceled -= OnDefaultPowerUpCanceled;
         playerInputActions.Player.UsePowerUp.performed -= OnUsePowerUpPerformed;
         playerInputActions.Player.Disable();
     }
@@ -44,7 +50,7 @@ public class CarInputHandler : MonoBehaviour
     {
         if (isUIInput)
         {
-            // Управление через UI кнопки/джойстик (если применяется)
+            // Управление через UI
         }
         else
         {
@@ -65,7 +71,10 @@ public class CarInputHandler : MonoBehaviour
             }
         }
 
-        topDownCarController.SetInputVector(inputVector);
+        if (topDownCarController != null)
+        {
+            topDownCarController.SetInputVector(inputVector);
+        }
 
         return inputVector.normalized;
     }
@@ -75,7 +84,45 @@ public class CarInputHandler : MonoBehaviour
         inputVector = newInput;
     }
 
-    private void OnUsePowerUpPerformed(InputAction.CallbackContext context)
+    #region Default PowerUp (Saw Blades / Left Shift)
+
+    private void OnDefaultPowerUpStarted(InputAction.CallbackContext context)
+    {
+        if (isUIInput) return;
+
+        if (defaultPowerUpController != null)
+        {
+            defaultPowerUpController.ActivatePowerUp();
+        }
+    }
+
+    private void OnDefaultPowerUpCanceled(InputAction.CallbackContext context)
+    {
+        if (isUIInput) return;
+
+        if (defaultPowerUpController != null)
+        {
+            defaultPowerUpController.DeactivatePowerUp();
+        }
+    }
+
+    public void OnDefaultPowerUpButtonDown()
+    {
+        if (defaultPowerUpController != null)
+            defaultPowerUpController.ActivatePowerUp();
+    }
+
+    public void OnDefaultPowerUpButtonUp()
+    {
+        if (defaultPowerUpController != null)
+            defaultPowerUpController.DeactivatePowerUp();
+    }
+
+    #endregion
+
+    #region Inventory PowerUp
+
+    public void OnUsePowerUpPerformed(InputAction.CallbackContext context)
     {
         if (isUIInput) return;
 
@@ -84,11 +131,6 @@ public class CarInputHandler : MonoBehaviour
             powerUpInventory.ActivatePowerUp();
         }
     }
-    public void OnPowerUpUIButtonClick()
-    {
-        if (powerUpInventory != null)
-        {
-            powerUpInventory.ActivatePowerUp();
-        }
-    }
+
+    #endregion
 }
