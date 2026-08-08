@@ -120,6 +120,7 @@
     <Compile Include="Assets\Sources\Scripts C#\UI\LapCounterUIHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\CarUIHandler.cs" />
     <Compile Include="Assets\Sources\Scripts C#\PowerUp\PowerUpSlotUI.cs" />
+    <Compile Include="Assets\Sources\Scripts C#\UI\PauseUI.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\PendingMoneyUI.cs" />
     <Compile Include="Assets\Sources\Scripts C#\UI\MoneyUI.cs" />
     <Compile Include="Assets\Sources\Scripts C#\Startup.cs" />
@@ -149,7 +150,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Sources\City Top-Down Tileset\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

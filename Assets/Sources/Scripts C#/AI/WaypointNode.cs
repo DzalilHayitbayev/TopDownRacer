@@ -11,4 +11,11 @@ public class WaypointNode : MonoBehaviour
     public float minDistanceToReachWaypoint = 5;
 
     public WaypointNode[] nextWaypointNode;
+
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, minDistanceToReachWaypoint);
+    }
 }

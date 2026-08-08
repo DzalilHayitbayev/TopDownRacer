@@ -10,6 +10,7 @@ public class SpawnCars : MonoBehaviour
     [SerializeField] ZombieSpawner zombieSpawner;
     [SerializeField] HealthUI healthUI;
     [SerializeField] StaminaUI staminaUI;
+    [SerializeField] PauseUI pauseUI;
     int numberOfCarsSpawned = 0;
 
     void Start()
@@ -67,9 +68,9 @@ public class SpawnCars : MonoBehaviour
                         defaultPowerUpController.SetStaminaUI(staminaUI);
 
                         var health = car.GetComponent<Health>();
-
                         healthUI.SetTarget(health);
                         GameManager.Instance.RegisterPlayerHealth(health);
+                        pauseUI.Setup(car.GetComponent<CarInputHandler>().InputActions);
                     }
 
                     numberOfCarsSpawned++;

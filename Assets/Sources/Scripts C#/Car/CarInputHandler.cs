@@ -13,6 +13,8 @@ public class CarInputHandler : MonoBehaviour
     private DefaultPowerUpController defaultPowerUpController;
     private PlayerInputActions playerInputActions;
 
+    public PlayerInputActions InputActions => playerInputActions;
+
     private void Awake()
     {
         topDownCarController = GetComponent<TopDownCarController>();
